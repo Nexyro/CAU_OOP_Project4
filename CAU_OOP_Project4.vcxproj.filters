@@ -16,9 +16,30 @@
     <Filter Include="Library Files">
       <UniqueIdentifier>{9f8ecd64-20d8-400b-8948-7ffb7c7d4fd9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SQLiteCpp">
+      <UniqueIdentifier>{d8bd8154-131c-4c63-82d5-cc5ba6f7d87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SQLiteCpp">
+      <UniqueIdentifier>{88cbc33a-65e4-4f50-8e71-c73d73efa0d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\SQLiteCpp\Backup.cpp">
+      <Filter>Source Files\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SQLiteCpp\Column.cpp">
+      <Filter>Source Files\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SQLiteCpp\Database.cpp">
+      <Filter>Source Files\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SQLiteCpp\Statement.cpp">
+      <Filter>Source Files\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SQLiteCpp\Transaction.cpp">
+      <Filter>Source Files\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,10 +47,38 @@
     <ClInclude Include="inc\sqlite3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Assertion.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Backup.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Column.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Database.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Exception.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\SQLiteCpp.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Statement.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SQLiteCpp\Transaction.h">
+      <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib">
       <Filter>Library Files</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="movies.db" />
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

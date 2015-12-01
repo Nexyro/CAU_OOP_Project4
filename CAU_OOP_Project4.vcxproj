@@ -63,6 +63,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>.\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>.\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -97,13 +100,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\SQLiteCpp\Backup.cpp" />
+    <ClCompile Include="src\SQLiteCpp\Column.cpp" />
+    <ClCompile Include="src\SQLiteCpp\Database.cpp" />
+    <ClCompile Include="src\SQLiteCpp\Statement.cpp" />
+    <ClCompile Include="src\SQLiteCpp\Transaction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\sqlite3.h" />
+    <ClInclude Include="inc\SQLiteCpp\Assertion.h" />
+    <ClInclude Include="inc\SQLiteCpp\Backup.h" />
+    <ClInclude Include="inc\SQLiteCpp\Column.h" />
+    <ClInclude Include="inc\SQLiteCpp\Database.h" />
+    <ClInclude Include="inc\SQLiteCpp\Exception.h" />
+    <ClInclude Include="inc\SQLiteCpp\SQLiteCpp.h" />
+    <ClInclude Include="inc\SQLiteCpp\Statement.h" />
+    <ClInclude Include="inc\SQLiteCpp\Transaction.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="movies.db" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
