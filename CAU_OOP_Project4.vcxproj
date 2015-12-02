@@ -122,6 +122,7 @@
     <Library Include="lib\sqlite3.lib" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="movies.db" />
     <None Include="README.md" />
   </ItemGroup>

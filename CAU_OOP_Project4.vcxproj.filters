@@ -80,5 +80,6 @@
   <ItemGroup>
     <None Include="movies.db" />
     <None Include="README.md" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>
