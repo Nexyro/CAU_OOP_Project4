@@ -22,6 +22,18 @@
     <Filter Include="Header Files\SQLiteCpp">
       <UniqueIdentifier>{88cbc33a-65e4-4f50-8e71-c73d73efa0d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Repository">
+      <UniqueIdentifier>{b42a3ed2-3ffb-4da8-817a-c5f445b1e302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{b745927b-abde-46e4-95ed-b0b12c8b2f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{1b401217-d453-4f12-8a1a-e8ee36d5fd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Repository">
+      <UniqueIdentifier>{cd415af9-e1b2-40cc-bfca-9993559e2e24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SQLiteCpp\Backup.cpp">
@@ -41,6 +53,21 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ORM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Movie.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\User.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovieRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +97,27 @@
     </ClInclude>
     <ClInclude Include="inc\SQLiteCpp\Transaction.h">
       <Filter>Header Files\SQLiteCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IEntity.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Movie.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\User.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MovieRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\UserRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ORM.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -105,14 +105,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\MovieRepository.cpp" />
+    <ClCompile Include="src\ORM.cpp" />
+    <ClCompile Include="src\Movie.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\SQLiteCpp\Backup.cpp" />
     <ClCompile Include="src\SQLiteCpp\Column.cpp" />
     <ClCompile Include="src\SQLiteCpp\Database.cpp" />
     <ClCompile Include="src\SQLiteCpp\Statement.cpp" />
     <ClCompile Include="src\SQLiteCpp\Transaction.cpp" />
+    <ClCompile Include="src\User.cpp" />
+    <ClCompile Include="src\UserRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="inc\IEntity.h" />
+    <ClInclude Include="inc\IRepository.h" />
     <ClInclude Include="inc\sqlite3.h" />
     <ClInclude Include="inc\SQLiteCpp\Assertion.h" />
     <ClInclude Include="inc\SQLiteCpp\Backup.h" />
@@ -122,6 +129,11 @@
     <ClInclude Include="inc\SQLiteCpp\SQLiteCpp.h" />
     <ClInclude Include="inc\SQLiteCpp\Statement.h" />
     <ClInclude Include="inc\SQLiteCpp\Transaction.h" />
+    <ClInclude Include="inc\Movie.h" />
+    <ClInclude Include="inc\ORM.h" />
+    <ClInclude Include="inc\User.h" />
+    <ClInclude Include="inc\MovieRepository.h" />
+    <ClInclude Include="inc\UserRepository.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />
