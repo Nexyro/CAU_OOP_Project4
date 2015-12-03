@@ -10,11 +10,10 @@ public:
 	ORM	*orm;
 
 public:
-	MovieRepository(ORM&);
+	MovieRepository(ORM*);
 	~MovieRepository();
 
-	Movie		findById(int);
-	list<Movie> findBy(string[]);
-	list<Movie> findAll();
+	Movie*			findById(int);
+	list<Movie>*	findBy(string[]);
+	list<Movie>*	findAll();
 };
-

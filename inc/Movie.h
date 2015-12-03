@@ -18,13 +18,13 @@ public:
 	Movie(int, string, string, string, int, int);
 	~Movie();
 
-	int		getId();
-	string	getTitle();
-	string	getTime();
-	string	getDate();
-	int		getDuration();
-	int		getStars();
+	int		getId() const;
+	string	getTitle() const;
+	string	getTime() const;
+	string	getDate() const;
+	int		getDuration() const;
+	int		getStars() const;
 
-	string	getEntityName();
+	string	getEntityName() const;
 };
 

@@ -13,5 +13,5 @@ class IEntity
 public:
 	virtual ~IEntity() {};
 
-	virtual string	getEntityName() = 0;
+	virtual string	getEntityName() const = 0;
 };

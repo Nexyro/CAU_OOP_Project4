@@ -14,14 +14,16 @@ class ORM
 {
 private:
 	SQLite::Database	*db;
+	SQLite::Statement	*query;
 
 public:
 	ORM();
 	~ORM();
 	
-	void	query();
-	void	exec();
-	void	save(IEntity&);
-	void	update(IEntity&);
+	void				querySQL(string);
+	map<string, string>	fetchArray();
+	//void				exec();
+	//void				save(IEntity&);
+	//void				update(IEntity&);
 };
 

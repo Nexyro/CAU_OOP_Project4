@@ -13,36 +13,36 @@ Movie::Movie(int id, string title, string time, string date, int duration, int s
 
 Movie::~Movie() {}
 
-int		Movie::getId()
+int		Movie::getId() const
 {
 	return this->id;
 }
 
-string	Movie::getTitle()
+string	Movie::getTitle() const
 {
 	return this->title;
 }
 
-string	Movie::getTime()
+string	Movie::getTime() const
 {
 	return this->time;
 }
 
-string	Movie::getDate()
+string	Movie::getDate() const
 {
 	return this->date;
 }
 
-int		Movie::getDuration()
+int		Movie::getDuration() const
 {
 	return this->duration;
 }
-int		Movie::getStars()
+int		Movie::getStars() const
 {
 	return this->stars;
 }
 
-string	Movie::getEntityName()
+string	Movie::getEntityName() const
 {
 	return "Movie";
 }

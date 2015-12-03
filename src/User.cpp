@@ -10,22 +10,22 @@ User::User(int id, string name, string mail, string password)
 
 User::~User() {}
 
-int	User::getId()
+int	User::getId() const
 {
 	return this->id;
 }
 
-string	User::getName()
+string	User::getName() const
 {
 	return this->name;
 }
 
-string	User::getMail()
+string	User::getMail() const
 {
 	return this->mail;
 }
 
-string	User::getEntityName()
+string	User::getEntityName() const
 {
 	return "User";
 }

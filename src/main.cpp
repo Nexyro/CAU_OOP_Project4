@@ -4,6 +4,9 @@
 
 #include <SQLiteCpp/SQLiteCpp.h>
 
+#include "MovieRepository.h"
+
+
 using namespace std;
 
 
@@ -22,9 +25,10 @@ int main()
 		{
 			// Demonstrate how to get some typed column value
 			int         id = query.getColumn(0);
+			string		idName = query.getColumnName(0);
 			const char* value = query.getColumn(1);
 
-			std::cout << "Id: " << id << " Name : " << value << std::endl;
+			std::cout << "Id:( "<< idName << ") " << id << " Name : " << value << std::endl;
 		}
 	}
 	catch (std::exception& e)

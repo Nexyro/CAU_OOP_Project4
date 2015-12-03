@@ -14,7 +14,7 @@ class IRepository
 public:
 	virtual ~IRepository() {};
 
-	virtual T		findById(int) = 0;
-	virtual	list<T>	findBy(string[]) = 0;
-	virtual	list<T> findAll() = 0;
+	virtual T*			findById(int) = 0;
+	virtual	list<T>*	findBy(string[]) = 0;
+	virtual	list<T>*	findAll() = 0;
 };

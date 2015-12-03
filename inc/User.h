@@ -16,10 +16,10 @@ public:
 	User(int, string, string, string);
 	~User();
 
-	int	getId();
-	string	getName();
-	string	getMail();
+	int	getId() const;
+	string	getName() const;
+	string	getMail() const;
 
-	string	getEntityName();
+	string	getEntityName() const;
 };
 

@@ -10,11 +10,11 @@ public:
 	ORM	*orm;
 
 public:
-	UserRepository(ORM&);
+	UserRepository(ORM*);
 	~UserRepository();
 
-	User		findById(int);
-	list<User>	findBy(string[]);
-	list<User>	findAll();
+	User*		findById(int);
+	list<User>*	findBy(string[]);
+	list<User>*	findAll();
 };
 
