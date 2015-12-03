@@ -38,6 +38,6 @@ int main()
 	}
 
 	// test
-	Menu* menu = new Menu();
+	Menu* menu = new Menu(); // why?
 	while (menu->run() != 0);
 }

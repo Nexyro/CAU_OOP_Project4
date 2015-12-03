@@ -11,4 +11,6 @@ private:
 	void searchMovie();
 	void searchSchedule();
 	void bookTickets();
+	void searchId();
+	void searchPassword();
 };
