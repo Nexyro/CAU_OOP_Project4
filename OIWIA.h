@@ -4,11 +4,8 @@
 
 using namespace std;
 
-class Menu
+class OIWIA
 {
 private:
-	UserManager* userManager;
-
-public:
-
+	
 };
