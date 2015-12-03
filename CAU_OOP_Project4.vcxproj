@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="inc\IEntity.h" />
     <ClInclude Include="inc\IRepository.h" />
+    <ClInclude Include="inc\Room.h" />
     <ClInclude Include="inc\sqlite3.h" />
     <ClInclude Include="inc\SQLiteCpp\Assertion.h" />
     <ClInclude Include="inc\SQLiteCpp\Backup.h" />
