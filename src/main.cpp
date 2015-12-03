@@ -5,6 +5,7 @@
 #include <SQLiteCpp/SQLiteCpp.h>
 
 #include "MovieRepository.h"
+#include "Menu.h"
 
 
 using namespace std;
@@ -35,4 +36,8 @@ int main()
 	{
 		std::cout << "exception: " << e.what() << std::endl;
 	}
+
+	// test
+	Menu* menu = new Menu();
+	while (menu->run() != 0);
 }

@@ -105,6 +105,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="Show.cpp" />
     <ClCompile Include="src\MovieRepository.cpp" />
     <ClCompile Include="src\ORM.cpp" />
     <ClCompile Include="src\Movie.cpp" />
@@ -116,6 +119,7 @@
     <ClCompile Include="src\SQLiteCpp\Transaction.cpp" />
     <ClCompile Include="src\User.cpp" />
     <ClCompile Include="src\UserRepository.cpp" />
+    <ClCompile Include="Theater.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\IEntity.h" />
@@ -135,6 +139,9 @@
     <ClInclude Include="inc\User.h" />
     <ClInclude Include="inc\MovieRepository.h" />
     <ClInclude Include="inc\UserRepository.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Show.h" />
+    <ClInclude Include="Theater.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />
