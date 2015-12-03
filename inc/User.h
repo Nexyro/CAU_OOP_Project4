@@ -12,12 +12,13 @@ public:
 
 public:
 	User();
+	User(string, string, string);
+	User(int, string, string, string);
 	~User();
 
-	string	getId();
+	int	getId();
 	string	getName();
 	string	getMail();
-	string	getPassword();
 
 	string	getEntityName();
 };

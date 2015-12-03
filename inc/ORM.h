@@ -1,4 +1,8 @@
 #pragma once
+/*
+ * this is not really a ORM, but this is an abstraction of the database
+ */
+
 
 #include <SQLiteCpp/SQLiteCpp.h>
 
@@ -17,6 +21,7 @@ public:
 	
 	void	query();
 	void	exec();
-	void	save(IEntity);
+	void	save(IEntity&);
+	void	update(IEntity&);
 };
 

@@ -1,15 +1,20 @@
 #pragma once
 
 #include "IRepository.h"
+#include "User.h"
+#include "ORM.h"
 
-class UserRepository : public IRepository
+class UserRepository : public IRepository<User>
 {
 public:
-	UserRepository();
+	ORM	*orm;
+
+public:
+	UserRepository(ORM&);
 	~UserRepository();
 
-	IEntity findById(int);
-	IEntity findBy(string*);
-	IEntity findAll();
+	User		findById(int);
+	list<User>	findBy(string[]);
+	list<User>	findAll();
 };
 

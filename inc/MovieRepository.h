@@ -1,15 +1,20 @@
 #pragma once
 
 #include "IRepository.h"
+#include "Movie.h"
+#include "ORM.h"
 
-class MovieRepository : public IRepository
+class MovieRepository : public IRepository<Movie>
 {
 public:
-	MovieRepository();
+	ORM	*orm;
+
+public:
+	MovieRepository(ORM&);
 	~MovieRepository();
 
-	IEntity findById(int);
-	IEntity findBy(string*);
-	IEntity findAll();
+	Movie		findById(int);
+	list<Movie> findBy(string[]);
+	list<Movie> findAll();
 };
 

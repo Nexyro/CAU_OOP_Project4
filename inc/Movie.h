@@ -14,13 +14,15 @@ public:
 
 public:
 	Movie();
+	Movie(string, string, string, int, int);
+	Movie(int, string, string, string, int, int);
 	~Movie();
 
 	int		getId();
 	string	getTitle();
 	string	getTime();
 	string	getDate();
-	string	getDuration();
+	int		getDuration();
 	int		getStars();
 
 	string	getEntityName();
