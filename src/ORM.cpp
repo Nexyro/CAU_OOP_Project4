@@ -38,3 +38,7 @@ void								ORM::bind(int index, int value)
 {
 	this->query->bind(index, value);
 }
+void								ORM::bind(int index, string value)
+{
+	this->query->bind(index, value);
+}

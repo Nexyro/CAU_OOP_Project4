@@ -24,7 +24,7 @@ public:
 		T*						obj;
 		map<string, string>*	resultQuery;
 
-		this->orm->setQuerySQL("SELECT * FROM " + T::getTableName() + " WHERE ID = ?");
+		this->orm->setQuerySQL("SELECT * FROM " + T::getTableName() + " WHERE id = ?");
 		this->orm->bind(1, id);
 
 		resultQuery = this->orm->fetchArray();
@@ -32,12 +32,28 @@ public:
 
 		return obj;
 	}
+
+	list<T>*	findBy(string key, string value)
+	{
+		list<T>*				listObj = new list<T>;
+		map<string, string>*	resultQuery;
+
+		this->orm->setQuerySQL("SELECT * FROM  " + T::getTableName() + " WHERE " + key + " = ?");
+		this->orm->bind(1, value);
+
+		while (resultQuery = this->orm->fetchArray())
+		{
+			listObj->push_back(Movie(*resultQuery));
+		}
+		return listObj;
+	}
+
 	list<T>*	findAll()
 {
 	list<T>*				listObj = new list<T>;
 	map<string, string>*	resultQuery;
 
-	this->orm->setQuerySQL("SELECT * FROM  " + T::getEntityName());
+	this->orm->setQuerySQL("SELECT * FROM  " + T::getTableName());
 
 	while (resultQuery = this->orm->fetchArray())
 	{

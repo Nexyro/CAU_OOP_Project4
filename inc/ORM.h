@@ -15,15 +15,16 @@ using namespace std;
 class ORM
 {
 private:
-	SQLite::Database				*db;
-	SQLite::Statement				*query;
+	SQLite::Database		*db;
+	SQLite::Statement		*query;
 
 public:
 	ORM();
 	~ORM();
 	
-	void							setQuerySQL(string);
+	void					setQuerySQL(string);
 	map<string, string>*	fetchArray();
-	void							bind(int, int);
+	void					bind(int, int);
+	void					bind(int, string);
 };
 

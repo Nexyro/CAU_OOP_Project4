@@ -4,7 +4,7 @@
 
 #include <SQLiteCpp/SQLiteCpp.h>
 
-#include "MovieRepository.h"
+#include "UserRepository.h"
 #include "Menu.h"
 
 
@@ -13,8 +13,8 @@ using namespace std;
 
 int main()
 {
-	MovieRepository*	MRepo = new MovieRepository(new ORM());
-	MRepo->findById(1);
+	UserRepository*	MRepo = new UserRepository(new ORM());
+	MRepo->login("toto", "toto422");
 
 	//try
 	//{
