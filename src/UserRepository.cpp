@@ -20,3 +20,8 @@ list<User>* UserRepository::findAll()
 
 	return listUsers;
 }
+
+bool	UserRepository::login(string name, string password)
+{
+
+}

@@ -15,5 +15,7 @@ public:
 
 	User*		findById(int);
 	list<User>*	findAll();
+
+	bool		login(string name, string password);
 };
 

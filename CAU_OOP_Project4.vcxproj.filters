@@ -69,23 +69,29 @@
     <ClCompile Include="src\UserRepository.cpp">
       <Filter>Source Files\Repository</Filter>
     </ClCompile>
-    <ClCompile Include="Room.cpp">
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Room.cpp">
       <Filter>Source Files\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="Theater.cpp">
+    <ClCompile Include="src\Show.cpp">
       <Filter>Source Files\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="Show.cpp">
+    <ClCompile Include="src\Theater.cpp">
       <Filter>Source Files\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Source Files\Entity</Filter>
+    <ClCompile Include="src\ShowRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoomRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TheaterRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="inc\sqlite3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\SQLiteCpp\Assertion.h">
       <Filter>Header Files\SQLiteCpp</Filter>
     </ClInclude>
@@ -113,19 +119,16 @@
     <ClInclude Include="inc\IEntity.h">
       <Filter>Header Files\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="inc\Movie.h">
-      <Filter>Header Files\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\User.h">
-      <Filter>Header Files\Entity</Filter>
-    </ClInclude>
     <ClInclude Include="inc\IRepository.h">
       <Filter>Header Files\Repository</Filter>
     </ClInclude>
-    <ClInclude Include="inc\MovieRepository.h">
-      <Filter>Header Files\Repository</Filter>
+    <ClInclude Include="inc\Menu.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\UserRepository.h">
+    <ClInclude Include="inc\Movie.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MovieRepository.h">
       <Filter>Header Files\Repository</Filter>
     </ClInclude>
     <ClInclude Include="inc\ORM.h">
@@ -134,14 +137,29 @@
     <ClInclude Include="inc\Room.h">
       <Filter>Header Files\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="Theater.h">
+    <ClInclude Include="inc\RoomRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Show.h">
       <Filter>Header Files\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="Show.h">
+    <ClInclude Include="inc\ShowRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\sqlite3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Theater.h">
       <Filter>Header Files\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="Menu.h">
+    <ClInclude Include="inc\TheaterRepository.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\User.h">
       <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\UserRepository.h">
+      <Filter>Header Files\Repository</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -150,8 +168,8 @@
     </Library>
   </ItemGroup>
   <ItemGroup>
-    <None Include="movies.db" />
     <None Include="README.md" />
     <None Include=".gitignore" />
+    <None Include="OOPsIWatchedItAgain.db" />
   </ItemGroup>
 </Project>

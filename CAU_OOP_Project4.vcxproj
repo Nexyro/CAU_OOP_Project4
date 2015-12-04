@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8F473BF1-4CB5-4116-BFC1-7F2560D799C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>OOPsIWatchedItAgain</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -105,26 +106,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Room.cpp" />
-    <ClCompile Include="Show.cpp" />
+    <ClCompile Include="src\RoomRepository.cpp" />
+    <ClCompile Include="src\ShowRepository.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MovieRepository.cpp" />
     <ClCompile Include="src\ORM.cpp" />
     <ClCompile Include="src\Movie.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Room.cpp" />
+    <ClCompile Include="src\Show.cpp" />
     <ClCompile Include="src\SQLiteCpp\Backup.cpp" />
     <ClCompile Include="src\SQLiteCpp\Column.cpp" />
     <ClCompile Include="src\SQLiteCpp\Database.cpp" />
     <ClCompile Include="src\SQLiteCpp\Statement.cpp" />
     <ClCompile Include="src\SQLiteCpp\Transaction.cpp" />
+    <ClCompile Include="src\Theater.cpp" />
     <ClCompile Include="src\User.cpp" />
     <ClCompile Include="src\UserRepository.cpp" />
-    <ClCompile Include="Theater.cpp" />
+    <ClCompile Include="src\TheaterRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\IEntity.h" />
     <ClInclude Include="inc\IRepository.h" />
+    <ClInclude Include="inc\Menu.h" />
     <ClInclude Include="inc\Room.h" />
+    <ClInclude Include="inc\Show.h" />
     <ClInclude Include="inc\sqlite3.h" />
     <ClInclude Include="inc\SQLiteCpp\Assertion.h" />
     <ClInclude Include="inc\SQLiteCpp\Backup.h" />
@@ -136,19 +142,20 @@
     <ClInclude Include="inc\SQLiteCpp\Transaction.h" />
     <ClInclude Include="inc\Movie.h" />
     <ClInclude Include="inc\ORM.h" />
+    <ClInclude Include="inc\Theater.h" />
     <ClInclude Include="inc\User.h" />
     <ClInclude Include="inc\MovieRepository.h" />
     <ClInclude Include="inc\UserRepository.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="Show.h" />
-    <ClInclude Include="Theater.h" />
+    <ClInclude Include="inc\RoomRepository.h" />
+    <ClInclude Include="inc\ShowRepository.h" />
+    <ClInclude Include="inc\TheaterRepository.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
-    <None Include="movies.db" />
+    <None Include="OOPsIWatchedItAgain.db" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

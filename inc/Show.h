@@ -1,21 +1,24 @@
 #pragma once
 
-#include <string>
-
-using namespace std;
+#include "IEntity.h"
 
 // about each show by time
-class Show
+class Show : public IEntity
 {
 private:
-	string movie;		// The Hunger Games
-	string date;		// 12-03-2015
-	string time;		// 21:20
-	string theater;		// CGV Yongsan
-	string room;		// CINEMA 9 (218 seats)
+	int		id;
+	int		idFkMovie;		// The Hunger Games
+	int		idFkTheater;	// CGV Yongsan
+	int		idFkRoom;		// CINEMA 9 (218 seats)
+	string	date;		// 12-03-2015-21-20
 
 public:
 	Show();
-	Show(string, string, string, string, string);
+	Show(int, int, int, int, string);
 	~Show();
+
+	int		getId();
+	string	getDate();
+
+	string	getEntityName();
 };

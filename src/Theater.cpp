@@ -2,10 +2,21 @@
 
 Theater::Theater() {}
 
-Theater::Theater(string name, string location)
-{
-	this->name = name;
-	this->location = location;
-}
+Theater::Theater(int id,  string name, string location) : id(id), name(name), location(location) {}
 
 Theater::~Theater() {}
+
+int		Theater::getId()
+{
+	return this->id;
+}
+
+string	Theater::getName()
+{
+	return this->name;
+}
+
+string	Theater::getLocation()
+{
+	return this->location;
+}

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "inc\Menu.h"
-#include "inc\User.h"
+#include "Menu.h"
+#include "User.h"
 
 using namespace std;
 

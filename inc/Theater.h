@@ -1,19 +1,23 @@
 #pragma once
 
-#include "inc\Room.h"
-#include <string>
-
-using namespace std;
+#include "IEntity.h"
 
 // info about the theater
-class Theater
+class Theater : public IEntity
 {
 private:
-	string name;		// ex) CGV Yongsan, CGV Yeouido
-	string location;	// ex) Yongsan, Yeouido, Shinchon
+	int		id;
+	string	name;		// ex) CGV Yongsan, CGV Yeouido
+	string	location;	// ex) Yongsan, Yeouido, Shinchon
 
 public:
 	Theater();
-	Theater(string, string);
+	Theater(int, string, string);
 	~Theater();
+
+	int		getId();
+	string	getName();
+	string	getLocation();
+
+	string	getEntityNam();
 };

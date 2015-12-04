@@ -6,8 +6,6 @@
 */
 #include <list>
 
-#include "IEntity.h"
-
 template <class T>
 class IRepository
 {

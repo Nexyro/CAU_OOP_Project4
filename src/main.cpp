@@ -40,7 +40,7 @@ int main()
 		std::cout << "exception: " << e.what() << std::endl;
 	}
 
-	// test
-	Menu* menu = new Menu(); // why?
-	while (menu->run() != 0);
+	//// test
+	//Menu* menu = new Menu(); // why?
+	//while (menu->run() != 0);
 }
