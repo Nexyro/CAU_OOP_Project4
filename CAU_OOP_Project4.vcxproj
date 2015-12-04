@@ -106,31 +106,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\RoomRepository.cpp" />
-    <ClCompile Include="src\ShowRepository.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MovieRepository.cpp" />
     <ClCompile Include="src\ORM.cpp" />
     <ClCompile Include="src\Movie.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Room.cpp" />
+    <ClCompile Include="src\RoomRepository.cpp" />
     <ClCompile Include="src\Show.cpp" />
+    <ClCompile Include="src\ShowRepository.cpp" />
     <ClCompile Include="src\SQLiteCpp\Backup.cpp" />
     <ClCompile Include="src\SQLiteCpp\Column.cpp" />
     <ClCompile Include="src\SQLiteCpp\Database.cpp" />
     <ClCompile Include="src\SQLiteCpp\Statement.cpp" />
     <ClCompile Include="src\SQLiteCpp\Transaction.cpp" />
     <ClCompile Include="src\Theater.cpp" />
+    <ClCompile Include="src\TheaterRepository.cpp" />
     <ClCompile Include="src\User.cpp" />
     <ClCompile Include="src\UserRepository.cpp" />
-    <ClCompile Include="src\TheaterRepository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\IEntity.h" />
-    <ClInclude Include="inc\IRepository.h" />
     <ClInclude Include="inc\Menu.h" />
+    <ClInclude Include="inc\MovieRepository.h" />
+    <ClInclude Include="inc\Repository.h" />
     <ClInclude Include="inc\Room.h" />
+    <ClInclude Include="inc\RoomRepository.h" />
     <ClInclude Include="inc\Show.h" />
+    <ClInclude Include="inc\ShowRepository.h" />
     <ClInclude Include="inc\sqlite3.h" />
     <ClInclude Include="inc\SQLiteCpp\Assertion.h" />
     <ClInclude Include="inc\SQLiteCpp\Backup.h" />
@@ -143,12 +146,9 @@
     <ClInclude Include="inc\Movie.h" />
     <ClInclude Include="inc\ORM.h" />
     <ClInclude Include="inc\Theater.h" />
-    <ClInclude Include="inc\User.h" />
-    <ClInclude Include="inc\MovieRepository.h" />
-    <ClInclude Include="inc\UserRepository.h" />
-    <ClInclude Include="inc\RoomRepository.h" />
-    <ClInclude Include="inc\ShowRepository.h" />
     <ClInclude Include="inc\TheaterRepository.h" />
+    <ClInclude Include="inc\User.h" />
+    <ClInclude Include="inc\UserRepository.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />

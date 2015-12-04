@@ -1,25 +1,27 @@
 #pragma once
 
+#include <map>
+
 #include "IEntity.h"
 
 class User : public IEntity
 {
-public:
+private:
 	int		id;	
-	string	name;
-	string	mail;
-	string	password;
+	string	name;		// Toto
+	string	mail;		// toto@example.com
+	string	password;	// toto42
 
 public:
 	User();
-	User(string, string, string);
 	User(int, string, string, string);
+	User(map<string, string>&);
 	~User();
 
-	int		getId() const;
-	string	getName() const;
-	string	getMail() const;
+	int				getId() const;
+	string			getName() const;
+	string			getMail() const;
 
-	string	getEntityName() const;
+	static string	getTableName();
 };
 

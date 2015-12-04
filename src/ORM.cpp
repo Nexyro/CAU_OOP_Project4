@@ -2,7 +2,7 @@
 
 ORM::ORM()
 {
-	this->db = new SQLite::Database("movies.db");
+	this->db = new SQLite::Database("OOPsIWatchedItAgain.db");
 }
 
 ORM::~ORM()
@@ -11,18 +11,18 @@ ORM::~ORM()
 	delete this->query;
 }
 
-void								ORM::setQuerySQL(string query)
+void						ORM::setQuerySQL(string query)
 {
 	this->query = new SQLite::Statement(*this->db, query);
 }
 
-map<const char*, const char*>*		ORM::fetchArray()
+map<string, string>*		ORM::fetchArray()
 {
-	map<const char*, const char*>*	listResult = new map<const char*, const char*>;
+	map<string, string>*	listResult = new map<string, string>;
 
 	if (this->query->executeStep())
 	{
-		for (size_t i = 0; i < this->query->getColumnCount(); i++)
+		for (int i = 0; i < this->query->getColumnCount(); i++)
 		{
 			listResult->insert(make_pair(this->query->getColumn(i).getName(), this->query->getColumn(i).getText()));
 		}

@@ -1,11 +1,14 @@
 #pragma once
 
-#include "IRepository.h"
+#include "Repository.h"
+#include "Room.h"
 
-class RoomRepository : public IRepository<RoomRepository>
+class RoomRepository : public Repository<Room>
 {
 public:
-	RoomRepository();
+	RoomRepository(ORM*);
 	~RoomRepository();
+
+	list<Room>*	findByTheater();
 };
 

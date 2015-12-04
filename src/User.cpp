@@ -2,15 +2,16 @@
 
 User::User() {}
 
-User::User(string name, string mail, string password)
-	: name(name), mail(mail), password(password) {}
-
 User::User(int id, string name, string mail, string password)
 	: id(id), name(name), mail(mail), password(password) {}
 
-// added
-User::User(string id_userid, string name, string mail, string password, string birthday)
-	: id_userid(id_userid), name(name), mail(mail), password(password), birthday(birthday) {}
+User::User(map<string, string>& array)
+{
+	this->id		= stoi(array["id"]);
+	this->name		= stoi(array["name"]);
+	this->mail		= stoi(array["mail"]);
+	this->password	= array["password"];
+}
 
 User::~User() {}
 
@@ -29,7 +30,7 @@ string	User::getMail() const
 	return this->mail;
 }
 
-string	User::getEntityName() const
+string	User::getTableName() const
 {
-	return "User";
+	return "USERS";
 }

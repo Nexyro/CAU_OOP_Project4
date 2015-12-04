@@ -1,28 +1,28 @@
 #pragma once
 
 #include "IEntity.h"
+#include <map>
 
 class Movie : public IEntity
 {
-public:
+private:
 	int		id;
-	string	title;
-	string	description;
-	string	time;
-	int		duration;
-	int		stars;
+	string	title;			// Inception
+	string	description;	// Something ...
+	int		duration;		// 42
+	int		stars;			// 5
 
 public:
 	Movie();
-	Movie(int, string, string, string, int, int);
+	Movie(int, string, string, int, int, int);
+	Movie(map<string, string>&);
 	~Movie();
 
-	int		getId();
-	string	getTitle();
-	string	getDescription();
-	string	getTime();
-	int		getDuration();
-	int		getStars();
+	int				getId() const;
+	string			getTitle() const;
+	string			getDescription() const;
+	int				getDuration() const;
+	int				getStars() const;
 
-	string	getEntityName();
+	static string	getTableName();
 };

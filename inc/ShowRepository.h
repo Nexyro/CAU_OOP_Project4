@@ -1,11 +1,15 @@
 #pragma once
 
-#include "IRepository.h"
+#include "Repository.h"
+#include "Show.h"
 
-class ShowRepository : public IRepository<ShowRepository>
+class ShowRepository : public Repository<Show>
 {
 public:
-	ShowRepository();
+	ShowRepository(ORM*);
 	~ShowRepository();
+
+	list<Show>*	findByMovie();
+	list<Show>*	findByRoom();
 };
 

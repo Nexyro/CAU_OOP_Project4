@@ -23,7 +23,7 @@ public:
 	~ORM();
 	
 	void							setQuerySQL(string);
-	map<const char*, const char*>*	fetchArray();
+	map<string, string>*	fetchArray();
 	void							bind(int, int);
 };
 

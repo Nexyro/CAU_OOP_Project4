@@ -1,8 +1,12 @@
 #pragma once
+/*
+ * info about the theater
+*/
+
+#include <map>
 
 #include "IEntity.h"
 
-// info about the theater
 class Theater : public IEntity
 {
 private:
@@ -13,11 +17,12 @@ private:
 public:
 	Theater();
 	Theater(int, string, string);
+	Theater(map<string, string>&);
 	~Theater();
 
-	int		getId();
-	string	getName();
-	string	getLocation();
+	int				getId() const;
+	string			getName() const;
+	string			getLocation() const;
 
-	string	getEntityNam();
+	static string	getTableName();
 };

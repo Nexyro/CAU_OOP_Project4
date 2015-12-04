@@ -1,45 +1,46 @@
 #include "Movie.h"
 
-Movie::Movie()
+Movie::Movie() {}
+
+Movie::Movie(int id, string title, string description, int time, int duration, int stars)
+	: id(id), title(title), description(description), duration(duration), stars(stars) {}
+
+Movie::Movie(map<string, string>& array)
 {
+	this->id			= stoi(array["id"]);
+	this->title			= array["title"];
+	this->description	= array["description"];
+	this->duration		= stoi(array["duration"]);
+	this->stars			= stoi(array["stars"]);
 }
-
-Movie::Movie(int id, string title, string description, string time, int duration, int stars)
-	: id(id), title(title), description(description), time(time), duration(duration), stars(stars) {}
-
 
 Movie::~Movie() {}
 
-int		Movie::getId()
+int		Movie::getId() const
 {
 	return this->id;
 }
 
-string	Movie::getTitle()
+string	Movie::getTitle() const
 {
 	return this->title;
 }
 
-string	Movie::getDescription()
+string	Movie::getDescription() const
 {
 	return this->description;
 }
 
-string	Movie::getTime()
-{
-	return this->time;
-}
-
-int		Movie::getDuration()
+int		Movie::getDuration() const
 {
 	return this->duration;
 }
-int		Movie::getStars()
+int		Movie::getStars() const
 {
 	return this->stars;
 }
 
-string	Movie::getEntityName()
+string	Movie::getTableName() const
 {
-	return "Movie";
+	return "MOVIES";
 }

@@ -1,21 +1,13 @@
 #pragma once
 
-#include "IRepository.h"
+#include "Repository.h"
 #include "User.h"
-#include "ORM.h"
 
-class UserRepository : public IRepository<User>
+class UserRepository : public Repository<User>
 {
-public:
-	ORM	*orm;
-
 public:
 	UserRepository(ORM*);
 	~UserRepository();
 
-	User*		findById(int);
-	list<User>*	findAll();
-
-	bool		login(string name, string password);
+	bool	login(string name, string password);
 };
-
