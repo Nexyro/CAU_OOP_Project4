@@ -14,7 +14,6 @@ public:
 	~UserRepository();
 
 	User*		findById(int);
-	list<User>*	findBy(string[]);
 	list<User>*	findAll();
 };
 

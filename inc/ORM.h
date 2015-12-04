@@ -5,6 +5,8 @@
 
 
 #include <SQLiteCpp/SQLiteCpp.h>
+#include <iostream>
+#include <map>
 
 #include "IEntity.h"
 
@@ -13,17 +15,15 @@ using namespace std;
 class ORM
 {
 private:
-	SQLite::Database	*db;
-	SQLite::Statement	*query;
+	SQLite::Database				*db;
+	SQLite::Statement				*query;
 
 public:
 	ORM();
 	~ORM();
 	
-	void				querySQL(string);
-	map<string, string>	fetchArray();
-	//void				exec();
-	//void				save(IEntity&);
-	//void				update(IEntity&);
+	void							setQuerySQL(string);
+	map<const char*, const char*>*	fetchArray();
+	void							bind(int, int);
 };
 

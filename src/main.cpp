@@ -13,6 +13,9 @@ using namespace std;
 
 int main()
 {
+	MovieRepository*	MRepo = new MovieRepository(new ORM());
+	MRepo->findById(1);
+
 	try
 	{
 		// Open a database file

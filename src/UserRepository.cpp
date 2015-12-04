@@ -13,12 +13,7 @@ User*		UserRepository::findById(int id)
 
 	return user;
 }
-list<User>* UserRepository::findBy(string[])
-{
-	list<User>*	listUsers = new list<User>;
 
-	return listUsers;
-}
 list<User>* UserRepository::findAll()
 {
 	list<User>*	listUsers = new list<User>;

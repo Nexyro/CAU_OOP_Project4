@@ -14,6 +14,5 @@ public:
 	~MovieRepository();
 
 	Movie*			findById(int);
-	list<Movie>*	findBy(string[]);
 	list<Movie>*	findAll();
 };
