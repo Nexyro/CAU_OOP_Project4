@@ -1,46 +1,14 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
 
-#include <SQLiteCpp/SQLiteCpp.h>
-
-#include "UserRepository.h"
-#include "Menu.h"
+using namespace System;
+using namespace System::Windows::Forms;
 
 
-using namespace std;
-
-
-int main()
+[STAThread]
+void Main(cli::array<String^>^ args)
 {
-	UserRepository*	MRepo = new UserRepository(new ORM());
-	MRepo->login("toto", "toto422");
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
 
-	//try
-	//{
-	//	// Open a database file
-	//	SQLite::Database    db("movies.db");
-
-	//	// Compile a SQL query, containing one parameter (index 1)
-	//	SQLite::Statement   query(db, "SELECT * FROM MOVIES");
-
-	//	// Loop to execute the query step by step, to get rows of result
-	//	while (query.executeStep())
-	//	{
-	//		// Demonstrate how to get some typed column value
-	//		int         id = query.getColumn(0);
-	//		string		idName = query.getColumnName(0);
-	//		const char* value = query.getColumn(1);
-
-	//		std::cout << "Id:( "<< idName << ") " << id << " Name : " << value << std::endl;
-	//	}
-	//}
-	//catch (std::exception& e)
-	//{
-	//	std::cout << "exception: " << e.what() << std::endl;
-	//}
-
-	//// test
-	//Menu* menu = new Menu(); // why?
-	//while (menu->run() != 0);
+	//OOPsIWatchedItAgain::MyForm form;
+	//Application::Run(%form);
 }

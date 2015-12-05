@@ -51,9 +51,6 @@
     <ClCompile Include="src\SQLiteCpp\Transaction.cpp">
       <Filter>Source Files\SQLiteCpp</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\ORM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -89,6 +86,9 @@
     </ClCompile>
     <ClCompile Include="src\Room.cpp">
       <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -171,5 +171,6 @@
     <None Include="README.md" />
     <None Include=".gitignore" />
     <None Include="OOPsIWatchedItAgain.db" />
+    <None Include="sqlite3.dll" />
   </ItemGroup>
 </Project>
