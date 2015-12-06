@@ -71,12 +71,16 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem2;
 	private: System::Windows::Forms::ToolStripComboBox^  toolStripComboBox1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem5;
-	private: System::Windows::Forms::Panel^  panel5;	// login panel
+			 // login panel
 	private: System::Windows::Forms::Panel^  panel6;	// user panel that is shown after login
 	private: System::Windows::Forms::Label^  bookedMovie_loginSuccessLabel;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  username_loginSuccessLabel;
+	private: System::Windows::Forms::Panel^  panel7;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Label^  label5;
 
 
 
@@ -102,17 +106,17 @@ namespace OOPsIWatchedItAgain {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::ListViewItem^  listViewItem12 = (gcnew System::Windows::Forms::ListViewItem(L"LOTR"));
-			System::Windows::Forms::ListViewItem^  listViewItem13 = (gcnew System::Windows::Forms::ListViewItem(L"Matrix"));
-			System::Windows::Forms::ListViewItem^  listViewItem14 = (gcnew System::Windows::Forms::ListViewItem(L"Inception"));
-			System::Windows::Forms::ListViewItem^  listViewItem15 = (gcnew System::Windows::Forms::ListViewItem(L"Interstellar"));
-			System::Windows::Forms::ListViewItem^  listViewItem16 = (gcnew System::Windows::Forms::ListViewItem(L"Cinema 9"));
-			System::Windows::Forms::ListViewItem^  listViewItem17 = (gcnew System::Windows::Forms::ListViewItem(L"UGC"));
-			System::Windows::Forms::ListViewItem^  listViewItem18 = (gcnew System::Windows::Forms::ListViewItem(L"Others"));
-			System::Windows::Forms::ListViewItem^  listViewItem19 = (gcnew System::Windows::Forms::ListViewItem(L"8:00pm"));
-			System::Windows::Forms::ListViewItem^  listViewItem20 = (gcnew System::Windows::Forms::ListViewItem(L"10:00pm"));
-			System::Windows::Forms::ListViewItem^  listViewItem21 = (gcnew System::Windows::Forms::ListViewItem(L"01:00pm"));
-			System::Windows::Forms::ListViewItem^  listViewItem22 = (gcnew System::Windows::Forms::ListViewItem(L"05:00pm"));
+			System::Windows::Forms::ListViewItem^  listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L"LOTR"));
+			System::Windows::Forms::ListViewItem^  listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L"Matrix"));
+			System::Windows::Forms::ListViewItem^  listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L"Inception"));
+			System::Windows::Forms::ListViewItem^  listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L"Interstellar"));
+			System::Windows::Forms::ListViewItem^  listViewItem5 = (gcnew System::Windows::Forms::ListViewItem(L"Cinema 9"));
+			System::Windows::Forms::ListViewItem^  listViewItem6 = (gcnew System::Windows::Forms::ListViewItem(L"UGC"));
+			System::Windows::Forms::ListViewItem^  listViewItem7 = (gcnew System::Windows::Forms::ListViewItem(L"Others"));
+			System::Windows::Forms::ListViewItem^  listViewItem8 = (gcnew System::Windows::Forms::ListViewItem(L"8:00pm"));
+			System::Windows::Forms::ListViewItem^  listViewItem9 = (gcnew System::Windows::Forms::ListViewItem(L"10:00pm"));
+			System::Windows::Forms::ListViewItem^  listViewItem10 = (gcnew System::Windows::Forms::ListViewItem(L"01:00pm"));
+			System::Windows::Forms::ListViewItem^  listViewItem11 = (gcnew System::Windows::Forms::ListViewItem(L"05:00pm"));
 			this->searchTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->titleLabel = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
@@ -128,7 +132,6 @@ namespace OOPsIWatchedItAgain {
 			this->menuSomethingToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripComboBox1 = (gcnew System::Windows::Forms::ToolStripComboBox());
 			this->toolStripMenuItem5 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->Login = (gcnew System::Windows::Forms::Button());
 			this->passwordTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->usernameTextBox = (gcnew System::Windows::Forms::TextBox());
@@ -147,22 +150,26 @@ namespace OOPsIWatchedItAgain {
 			this->username_loginSuccessLabel = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->bookedMovie_loginSuccessLabel = (gcnew System::Windows::Forms::Label());
+			this->panel7 = (gcnew System::Windows::Forms::Panel());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
 			this->menuStrip2->SuspendLayout();
 			this->menuStrip3->SuspendLayout();
-			this->panel5->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel4->SuspendLayout();
 			this->panel6->SuspendLayout();
+			this->panel7->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// searchTextBox
 			// 
 			this->searchTextBox->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->searchTextBox->Location = System::Drawing::Point(218, 49);
+			this->searchTextBox->Location = System::Drawing::Point(219, 57);
 			this->searchTextBox->Name = L"searchTextBox";
 			this->searchTextBox->Size = System::Drawing::Size(272, 23);
 			this->searchTextBox->TabIndex = 0;
@@ -173,7 +180,7 @@ namespace OOPsIWatchedItAgain {
 			this->titleLabel->AutoSize = true;
 			this->titleLabel->Font = (gcnew System::Drawing::Font(L"Century Gothic", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->titleLabel->Location = System::Drawing::Point(271, 9);
+			this->titleLabel->Location = System::Drawing::Point(251, 9);
 			this->titleLabel->Name = L"titleLabel";
 			this->titleLabel->Size = System::Drawing::Size(202, 39);
 			this->titleLabel->TabIndex = 1;
@@ -288,23 +295,13 @@ namespace OOPsIWatchedItAgain {
 			this->toolStripMenuItem5->Size = System::Drawing::Size(181, 22);
 			this->toolStripMenuItem5->Text = L"toolStripMenuItem5";
 			// 
-			// panel5
-			// 
-			this->panel5->Controls->Add(this->Login);
-			this->panel5->Controls->Add(this->passwordTextBox);
-			this->panel5->Controls->Add(this->usernameTextBox);
-			this->panel5->Location = System::Drawing::Point(14, 49);
-			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(153, 119);
-			this->panel5->TabIndex = 2;
-			// 
 			// Login
 			// 
 			this->Login->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Login->Location = System::Drawing::Point(19, 71);
+			this->Login->Location = System::Drawing::Point(224, 174);
 			this->Login->Name = L"Login";
-			this->Login->Size = System::Drawing::Size(117, 27);
+			this->Login->Size = System::Drawing::Size(196, 27);
 			this->Login->TabIndex = 0;
 			this->Login->Text = L"Login";
 			this->Login->UseVisualStyleBackColor = true;
@@ -314,27 +311,25 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->passwordTextBox->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->passwordTextBox->Location = System::Drawing::Point(20, 44);
+			this->passwordTextBox->Location = System::Drawing::Point(303, 135);
 			this->passwordTextBox->Name = L"passwordTextBox";
 			this->passwordTextBox->Size = System::Drawing::Size(116, 23);
 			this->passwordTextBox->TabIndex = 2;
-			this->passwordTextBox->Text = L"Password";
 			// 
 			// usernameTextBox
 			// 
 			this->usernameTextBox->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->usernameTextBox->Location = System::Drawing::Point(20, 16);
+			this->usernameTextBox->Location = System::Drawing::Point(303, 106);
 			this->usernameTextBox->Name = L"usernameTextBox";
 			this->usernameTextBox->Size = System::Drawing::Size(116, 23);
 			this->usernameTextBox->TabIndex = 1;
-			this->usernameTextBox->Text = L"Username";
 			// 
 			// panel2
 			// 
 			this->panel2->Controls->Add(this->listView1);
 			this->panel2->Controls->Add(this->moviesLabel);
-			this->panel2->Location = System::Drawing::Point(174, 77);
+			this->panel2->Location = System::Drawing::Point(175, 93);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(150, 222);
 			this->panel2->TabIndex = 3;
@@ -344,8 +339,8 @@ namespace OOPsIWatchedItAgain {
 			this->listView1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
-				listViewItem12, listViewItem13,
-					listViewItem14, listViewItem15
+				listViewItem1, listViewItem2,
+					listViewItem3, listViewItem4
 			});
 			this->listView1->Location = System::Drawing::Point(14, 26);
 			this->listView1->Name = L"listView1";
@@ -359,7 +354,7 @@ namespace OOPsIWatchedItAgain {
 			this->moviesLabel->AutoSize = true;
 			this->moviesLabel->Font = (gcnew System::Drawing::Font(L"Century Gothic", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->moviesLabel->Location = System::Drawing::Point(35, 3);
+			this->moviesLabel->Location = System::Drawing::Point(40, 3);
 			this->moviesLabel->Name = L"moviesLabel";
 			this->moviesLabel->Size = System::Drawing::Size(77, 23);
 			this->moviesLabel->TabIndex = 0;
@@ -369,7 +364,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->panel3->Controls->Add(this->listView2);
 			this->panel3->Controls->Add(this->theaterLabel);
-			this->panel3->Location = System::Drawing::Point(331, 77);
+			this->panel3->Location = System::Drawing::Point(331, 93);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(149, 222);
 			this->panel3->TabIndex = 4;
@@ -379,8 +374,8 @@ namespace OOPsIWatchedItAgain {
 			this->listView2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->listView2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(3) {
-				listViewItem16, listViewItem17,
-					listViewItem18
+				listViewItem5, listViewItem6,
+					listViewItem7
 			});
 			this->listView2->Location = System::Drawing::Point(15, 26);
 			this->listView2->Name = L"listView2";
@@ -394,7 +389,7 @@ namespace OOPsIWatchedItAgain {
 			this->theaterLabel->AutoSize = true;
 			this->theaterLabel->Font = (gcnew System::Drawing::Font(L"Century Gothic", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->theaterLabel->Location = System::Drawing::Point(24, 3);
+			this->theaterLabel->Location = System::Drawing::Point(31, 3);
 			this->theaterLabel->Name = L"theaterLabel";
 			this->theaterLabel->Size = System::Drawing::Size(91, 23);
 			this->theaterLabel->TabIndex = 0;
@@ -404,7 +399,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->panel4->Controls->Add(this->showsLabel);
 			this->panel4->Controls->Add(this->listView3);
-			this->panel4->Location = System::Drawing::Point(488, 77);
+			this->panel4->Location = System::Drawing::Point(486, 93);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(149, 222);
 			this->panel4->TabIndex = 5;
@@ -425,8 +420,8 @@ namespace OOPsIWatchedItAgain {
 			this->listView3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->listView3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
-				listViewItem19, listViewItem20,
-					listViewItem21, listViewItem22
+				listViewItem8, listViewItem9,
+					listViewItem10, listViewItem11
 			});
 			this->listView3->Location = System::Drawing::Point(14, 26);
 			this->listView3->Name = L"listView3";
@@ -439,7 +434,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->searchButton->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->searchButton->Location = System::Drawing::Point(502, 48);
+			this->searchButton->Location = System::Drawing::Point(500, 57);
 			this->searchButton->Name = L"searchButton";
 			this->searchButton->Size = System::Drawing::Size(87, 23);
 			this->searchButton->TabIndex = 6;
@@ -503,19 +498,67 @@ namespace OOPsIWatchedItAgain {
 			this->bookedMovie_loginSuccessLabel->TabIndex = 0;
 			this->bookedMovie_loginSuccessLabel->Text = L"none";
 			// 
+			// panel7
+			// 
+			this->panel7->Controls->Add(this->Login);
+			this->panel7->Controls->Add(this->label4);
+			this->panel7->Controls->Add(this->label3);
+			this->panel7->Controls->Add(this->usernameTextBox);
+			this->panel7->Controls->Add(this->passwordTextBox);
+			this->panel7->Controls->Add(this->label5);
+			this->panel7->Location = System::Drawing::Point(12, 12);
+			this->panel7->Name = L"panel7";
+			this->panel7->Size = System::Drawing::Size(635, 303);
+			this->panel7->TabIndex = 2;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(221, 138);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(70, 17);
+			this->label4->TabIndex = 0;
+			this->label4->Text = L"password";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(221, 109);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(71, 17);
+			this->label3->TabIndex = 0;
+			this->label3->Text = L"username";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Century Gothic", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(132, 45);
+			this->label5->Margin = System::Windows::Forms::Padding(0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(406, 39);
+			this->label5->TabIndex = 1;
+			this->label5->Text = L"OOPs I Watched It Again";
+			this->label5->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
+			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(7, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(659, 323);
-			this->Controls->Add(this->panel5);
+			this->Controls->Add(this->panel7);
+			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->searchButton);
 			this->Controls->Add(this->panel4);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->titleLabel);
 			this->Controls->Add(this->searchTextBox);
-			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->panel1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MainWindow";
@@ -528,8 +571,6 @@ namespace OOPsIWatchedItAgain {
 			this->menuStrip2->PerformLayout();
 			this->menuStrip3->ResumeLayout(false);
 			this->menuStrip3->PerformLayout();
-			this->panel5->ResumeLayout(false);
-			this->panel5->PerformLayout();
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
 			this->panel3->ResumeLayout(false);
@@ -538,6 +579,8 @@ namespace OOPsIWatchedItAgain {
 			this->panel4->PerformLayout();
 			this->panel6->ResumeLayout(false);
 			this->panel6->PerformLayout();
+			this->panel7->ResumeLayout(false);
+			this->panel7->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -569,7 +612,7 @@ namespace OOPsIWatchedItAgain {
 		
 		if (loginCheck == true) // login success
 		{
-			panel5->Hide();
+			panel7->Hide();
 			username_loginSuccessLabel->Text = _username;
 			// bookedMovie_loginSuccessLabel->Text = L"/*booked_movie_name*/";
 			panel6->Visible = true;

@@ -109,6 +109,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OOPsIWatchedItAgain.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MovieRepository.cpp" />
@@ -152,6 +153,9 @@
     <ClInclude Include="inc\TheaterRepository.h" />
     <ClInclude Include="inc\User.h" />
     <ClInclude Include="inc\UserRepository.h" />
+    <ClInclude Include="OOPsIWatchedItAgain.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\sqlite3.lib" />
@@ -170,6 +174,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OOPsIWatchedItAgain.resx">
+      <DependentUpon>OOPsIWatchedItAgain.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
