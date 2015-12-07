@@ -25,9 +25,6 @@ namespace OOPsIWatchedItAgain {
 		MainWindow(void)
 		{
 			InitializeComponent();
-	
-			//ORM* orm = new ORM();
-			//UserRepository* userRepo = new UserRepository(orm);
 		}
 		
 	protected:
@@ -72,7 +69,7 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem2;
 	private: System::Windows::Forms::ToolStripComboBox^  toolStripComboBox1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem5;
-			 // login panel
+	private: System::Windows::Forms::Panel^  panel8;    // login panel
 	private: System::Windows::Forms::Panel^  panel6;	// user panel that is shown after login
 	private: System::Windows::Forms::Label^  bookedMovie_loginSuccessLabel;
 	private: System::Windows::Forms::Label^  label2;
@@ -531,7 +528,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->Controls->Add(this->usernameTextBox);
 			this->panel7->Controls->Add(this->passwordTextBox);
 			this->panel7->Controls->Add(this->label5);
-			this->panel7->Location = System::Drawing::Point(12, 9);
+			this->panel7->Location = System::Drawing::Point(12, 17);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(635, 303);
 			this->panel7->TabIndex = 2;
@@ -586,7 +583,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel5->Controls->Add(this->dscrp_movieTitle);
 			this->panel5->Location = System::Drawing::Point(173, 86);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(878, 342);
+			this->panel5->Size = System::Drawing::Size(474, 234);
 			this->panel5->TabIndex = 2;
 			this->panel5->Visible = false;
 			// 
@@ -594,7 +591,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->buttonBack->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonBack->Location = System::Drawing::Point(396, 196);
+			this->buttonBack->Location = System::Drawing::Point(387, 198);
 			this->buttonBack->Name = L"buttonBack";
 			this->buttonBack->Size = System::Drawing::Size(75, 27);
 			this->buttonBack->TabIndex = 0;
@@ -755,6 +752,26 @@ namespace OOPsIWatchedItAgain {
 		string searchword = msclr::interop::marshal_as<std::string>(_searchword);	// gets search word
 
 		Movie* movie = movieRepo->findByTitle(searchword);
+		// If there is no movie by the title entered,
+		if (movie == NULL)
+		{
+			// Initializes the variables to pass to the MessageBox::Show method.
+			String^ message = "No movie by that name. Please check and enter again.";
+			String^ caption = "Movie Search Error";
+			MessageBoxButtons button = MessageBoxButtons::OK;
+			System::Windows::Forms::DialogResult result;
+
+			// Displays the MessageBox.
+			result = MessageBox::Show(this, message, caption, button);
+			if (result == ::System::Windows::Forms::DialogResult::OK)
+			{
+				// clear username and password and set focus to username
+				searchTextBox->Clear();
+				searchTextBox->Focus();
+				return;
+			}
+		}
+
 		int movieDuration = movie->getDuration();
 		int movieRating = movie->getStars();
 		string movieDescription = movie->getDescription();

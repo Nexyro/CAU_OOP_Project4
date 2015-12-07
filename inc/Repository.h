@@ -42,6 +42,8 @@ public:
 		this->orm->bind(1, title);
 
 		resultQuery = this->orm->fetchArray();
+		if (resultQuery == NULL)
+			return NULL;
 		obj = new T(*resultQuery);
 
 		return obj;
