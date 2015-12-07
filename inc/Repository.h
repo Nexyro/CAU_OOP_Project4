@@ -33,6 +33,20 @@ public:
 		return obj;
 	}
 
+	T*			findByTitle(string title)
+	{
+		T*						obj;
+		map<string, string>*	resultQuery;
+
+		this->orm->setQuerySQL("SELECT * FROM " + T::getTableName() + " WHERE title = ?");
+		this->orm->bind(1, title);
+
+		resultQuery = this->orm->fetchArray();
+		obj = new T(*resultQuery);
+
+		return obj;
+	}
+
 	list<T>*	findBy(string key, string value)
 	{
 		list<T>*				listObj = new list<T>;

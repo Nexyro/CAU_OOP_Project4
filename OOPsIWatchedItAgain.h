@@ -3,6 +3,7 @@
 #include <msclr\marshal_cppstd.h>
 #include "ORM.h"
 #include "UserRepository.h"
+#include "inc\MovieRepository.h"
 
 namespace OOPsIWatchedItAgain {
 
@@ -81,6 +82,19 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label5;
+	private: System::Windows::Forms::Panel^  panel5;
+	private: System::Windows::Forms::Button^  buttonBack;
+	private: System::Windows::Forms::Label^  label6;
+	private: System::Windows::Forms::Label^  label7;
+
+
+	private: System::Windows::Forms::Label^  dscrp_movieTitle;
+	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::Label^  dscrp_movieRating;
+	private: System::Windows::Forms::Label^  dscrp_movieDescription;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::Label^  dscrp_movieDuration;
 
 
 
@@ -154,6 +168,17 @@ namespace OOPsIWatchedItAgain {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->buttonBack = (gcnew System::Windows::Forms::Button());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->dscrp_movieRating = (gcnew System::Windows::Forms::Label());
+			this->dscrp_movieDescription = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->dscrp_movieDuration = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->dscrp_movieTitle = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
 			this->menuStrip2->SuspendLayout();
@@ -163,6 +188,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel4->SuspendLayout();
 			this->panel6->SuspendLayout();
 			this->panel7->SuspendLayout();
+			this->panel5->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// searchTextBox
@@ -173,7 +199,6 @@ namespace OOPsIWatchedItAgain {
 			this->searchTextBox->Name = L"searchTextBox";
 			this->searchTextBox->Size = System::Drawing::Size(272, 23);
 			this->searchTextBox->TabIndex = 0;
-			this->searchTextBox->Text = L"Search movies";
 			// 
 			// titleLabel
 			// 
@@ -506,7 +531,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->Controls->Add(this->usernameTextBox);
 			this->panel7->Controls->Add(this->passwordTextBox);
 			this->panel7->Controls->Add(this->label5);
-			this->panel7->Location = System::Drawing::Point(12, 12);
+			this->panel7->Location = System::Drawing::Point(12, 9);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(635, 303);
 			this->panel7->TabIndex = 2;
@@ -546,12 +571,146 @@ namespace OOPsIWatchedItAgain {
 			this->label5->Text = L"OOPs I Watched It Again";
 			this->label5->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
 			// 
+			// panel5
+			// 
+			this->panel5->AutoSize = true;
+			this->panel5->Controls->Add(this->buttonBack);
+			this->panel5->Controls->Add(this->label12);
+			this->panel5->Controls->Add(this->dscrp_movieRating);
+			this->panel5->Controls->Add(this->dscrp_movieDescription);
+			this->panel5->Controls->Add(this->label13);
+			this->panel5->Controls->Add(this->label6);
+			this->panel5->Controls->Add(this->label11);
+			this->panel5->Controls->Add(this->dscrp_movieDuration);
+			this->panel5->Controls->Add(this->label7);
+			this->panel5->Controls->Add(this->dscrp_movieTitle);
+			this->panel5->Location = System::Drawing::Point(173, 86);
+			this->panel5->Name = L"panel5";
+			this->panel5->Size = System::Drawing::Size(878, 342);
+			this->panel5->TabIndex = 2;
+			this->panel5->Visible = false;
+			// 
+			// buttonBack
+			// 
+			this->buttonBack->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->buttonBack->Location = System::Drawing::Point(396, 196);
+			this->buttonBack->Name = L"buttonBack";
+			this->buttonBack->Size = System::Drawing::Size(75, 27);
+			this->buttonBack->TabIndex = 0;
+			this->buttonBack->Text = L"Back";
+			this->buttonBack->UseVisualStyleBackColor = true;
+			this->buttonBack->Click += gcnew System::EventHandler(this, &MainWindow::buttonBack_Click);
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label12->Location = System::Drawing::Point(115, 73);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(28, 17);
+			this->label12->TabIndex = 0;
+			this->label12->Text = L"/10";
+			// 
+			// dscrp_movieRating
+			// 
+			this->dscrp_movieRating->AutoSize = true;
+			this->dscrp_movieRating->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->dscrp_movieRating->Location = System::Drawing::Point(102, 73);
+			this->dscrp_movieRating->Name = L"dscrp_movieRating";
+			this->dscrp_movieRating->Size = System::Drawing::Size(15, 17);
+			this->dscrp_movieRating->TabIndex = 0;
+			this->dscrp_movieRating->Text = L"5";
+			// 
+			// dscrp_movieDescription
+			// 
+			this->dscrp_movieDescription->AutoSize = true;
+			this->dscrp_movieDescription->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->dscrp_movieDescription->Location = System::Drawing::Point(33, 110);
+			this->dscrp_movieDescription->MaximumSize = System::Drawing::Size(400, 0);
+			this->dscrp_movieDescription->Name = L"dscrp_movieDescription";
+			this->dscrp_movieDescription->Size = System::Drawing::Size(127, 17);
+			this->dscrp_movieDescription->TabIndex = 0;
+			this->dscrp_movieDescription->Text = L"movie_description";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label13->Location = System::Drawing::Point(33, 90);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(79, 17);
+			this->label13->TabIndex = 0;
+			this->label13->Text = L"description";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(33, 73);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(46, 17);
+			this->label6->TabIndex = 0;
+			this->label6->Text = L"rating";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label11->Location = System::Drawing::Point(137, 55);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(32, 17);
+			this->label11->TabIndex = 0;
+			this->label11->Text = L"min";
+			// 
+			// dscrp_movieDuration
+			// 
+			this->dscrp_movieDuration->AutoSize = true;
+			this->dscrp_movieDuration->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->dscrp_movieDuration->Location = System::Drawing::Point(102, 55);
+			this->dscrp_movieDuration->Name = L"dscrp_movieDuration";
+			this->dscrp_movieDuration->Size = System::Drawing::Size(29, 17);
+			this->dscrp_movieDuration->TabIndex = 0;
+			this->dscrp_movieDuration->Text = L"120";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->Location = System::Drawing::Point(33, 55);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(63, 17);
+			this->label7->TabIndex = 0;
+			this->label7->Text = L"duration";
+			// 
+			// dscrp_movieTitle
+			// 
+			this->dscrp_movieTitle->AutoSize = true;
+			this->dscrp_movieTitle->Font = (gcnew System::Drawing::Font(L"Century Gothic", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->dscrp_movieTitle->Location = System::Drawing::Point(27, 15);
+			this->dscrp_movieTitle->Margin = System::Windows::Forms::Padding(0);
+			this->dscrp_movieTitle->Name = L"dscrp_movieTitle";
+			this->dscrp_movieTitle->Size = System::Drawing::Size(143, 30);
+			this->dscrp_movieTitle->TabIndex = 1;
+			this->dscrp_movieTitle->Text = L"Movie Title";
+			this->dscrp_movieTitle->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
+			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(7, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(659, 323);
 			this->Controls->Add(this->panel7);
+			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->searchButton);
 			this->Controls->Add(this->panel4);
@@ -581,6 +740,8 @@ namespace OOPsIWatchedItAgain {
 			this->panel6->PerformLayout();
 			this->panel7->ResumeLayout(false);
 			this->panel7->PerformLayout();
+			this->panel5->ResumeLayout(false);
+			this->panel5->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -588,19 +749,25 @@ namespace OOPsIWatchedItAgain {
 #pragma endregion
 	// movie search button
 	private: System::Void searchButton_Click(System::Object^  sender, System::EventArgs^  e) {
-		ORM* orm = new ORM();
-		UserRepository* userRepo = new UserRepository(orm);
+		MovieRepository* movieRepo = new MovieRepository(new ORM());
 
 		String^ _searchword = searchTextBox->Text;
 		string searchword = msclr::interop::marshal_as<std::string>(_searchword);	// gets search word
-		
-		
 
+		Movie* movie = movieRepo->findByTitle(searchword);
+		int movieDuration = movie->getDuration();
+		int movieRating = movie->getStars();
+		string movieDescription = movie->getDescription();
+		
+		panel5->Visible = true;
+		dscrp_movieTitle->Text = _searchword;
+		dscrp_movieDescription->Text = gcnew String(movieDescription.c_str());
+		dscrp_movieDuration->Text = movieDuration.ToString();
+		dscrp_movieRating->Text = movieRating.ToString();
 	}
 	// login button
 	private: System::Void Login_Click(System::Object^  sender, System::EventArgs^  e) {
-		ORM* orm = new ORM();
-		UserRepository* userRepo = new UserRepository(orm);
+		UserRepository* userRepo = new UserRepository(new ORM());
 
 		String^ _username = usernameTextBox->Text;	// gets username
 		String^ _password = passwordTextBox->Text;	// gets password
@@ -636,7 +803,13 @@ namespace OOPsIWatchedItAgain {
 			}
 		}
 	}
+	// click back button from movie description page
+	private: System::Void buttonBack_Click(System::Object^  sender, System::EventArgs^  e) {
+		searchTextBox->Clear();
+		panel5->Hide();
+	}
 	private: System::Void titleLabel_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
+
 };
 }
