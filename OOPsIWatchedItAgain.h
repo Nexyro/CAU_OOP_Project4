@@ -117,7 +117,7 @@ namespace OOPsIWatchedItAgain {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::ListViewItem^  listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L"LOTR"));
+			/*System::Windows::Forms::ListViewItem^  listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L"LOTR"));
 			System::Windows::Forms::ListViewItem^  listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L"Matrix"));
 			System::Windows::Forms::ListViewItem^  listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L"Inception"));
 			System::Windows::Forms::ListViewItem^  listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L"Interstellar"));
@@ -127,7 +127,7 @@ namespace OOPsIWatchedItAgain {
 			System::Windows::Forms::ListViewItem^  listViewItem8 = (gcnew System::Windows::Forms::ListViewItem(L"8:00pm"));
 			System::Windows::Forms::ListViewItem^  listViewItem9 = (gcnew System::Windows::Forms::ListViewItem(L"10:00pm"));
 			System::Windows::Forms::ListViewItem^  listViewItem10 = (gcnew System::Windows::Forms::ListViewItem(L"01:00pm"));
-			System::Windows::Forms::ListViewItem^  listViewItem11 = (gcnew System::Windows::Forms::ListViewItem(L"05:00pm"));
+			System::Windows::Forms::ListViewItem^  listViewItem11 = (gcnew System::Windows::Forms::ListViewItem(L"05:00pm"));*/
 			this->searchTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->titleLabel = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
@@ -360,10 +360,18 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->listView1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
+			/*this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
 				listViewItem1, listViewItem2,
 					listViewItem3, listViewItem4
-			});
+			});*/
+
+			MovieRepository* movieRepo = new MovieRepository(new ORM());
+			list<Movie>* movieList = movieRepo->findAll();
+			for (std::list<Movie>::iterator it = movieList->begin(); it != movieList->end(); ++it)
+			{
+				listView1->Items->Add(gcnew String((it->getTitle()).c_str()), 1);
+			}
+
 			this->listView1->Location = System::Drawing::Point(14, 26);
 			this->listView1->Name = L"listView1";
 			this->listView1->Size = System::Drawing::Size(121, 181);
@@ -395,10 +403,10 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->listView2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->listView2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(3) {
+			/*this->listView2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(3) {
 				listViewItem5, listViewItem6,
 					listViewItem7
-			});
+			});*/
 			this->listView2->Location = System::Drawing::Point(15, 26);
 			this->listView2->Name = L"listView2";
 			this->listView2->Size = System::Drawing::Size(121, 181);
@@ -441,10 +449,10 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->listView3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->listView3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
+			/*this->listView3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(4) {
 				listViewItem8, listViewItem9,
 					listViewItem10, listViewItem11
-			});
+			});*/
 			this->listView3->Location = System::Drawing::Point(14, 26);
 			this->listView3->Name = L"listView3";
 			this->listView3->Size = System::Drawing::Size(121, 181);
