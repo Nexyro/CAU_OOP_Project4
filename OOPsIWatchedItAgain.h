@@ -1,10 +1,12 @@
 #pragma once
 #include <string>
 #include <msclr\marshal_cppstd.h>
+#include <algorithm>
 #include "ORM.h"
 #include "UserRepository.h"
 #include "inc/MovieRepository.h"
 #include "inc/ShowRepository.h"
+#include "inc/TheaterRepository.h"
 
 namespace OOPsIWatchedItAgain {
 
@@ -443,6 +445,7 @@ namespace OOPsIWatchedItAgain {
 			this->listView3->TabIndex = 0;
 			this->listView3->UseCompatibleStateImageBehavior = false;
 			this->listView3->View = System::Windows::Forms::View::List;
+			this->listView3->SelectedIndexChanged += gcnew System::EventHandler(this, &MainWindow::listView3_SelectedIndexChanged);
 			// 
 			// searchButton
 			// 
@@ -826,6 +829,7 @@ private: System::Void MainWindow_Load(System::Object^  sender, System::EventArgs
 }
 
 private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	this->listView2->Clear();
 	if (this->listView1->SelectedItems->Count == 0)
 		return;
 
@@ -837,16 +841,25 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, Sy
 
 
 	MovieRepository* movieRepo = new MovieRepository(new ORM());
+	TheaterRepository*	toto = new TheaterRepository(new ORM());
 
 	Movie* movie = movieRepo->findByTitle(movieTitle);
 	int idOfMovie = movie->getId();		// get the id of that movie
 
 	ShowRepository* showRepo = new ShowRepository(new ORM());
 	list<::Show>* showList = showRepo->findBy("id_fk_movie", to_string(idOfMovie));
+	
+	vector<int> vec = vector<int>();
 	for (std::list<::Show>::iterator it = showList->begin(); it != showList->end(); ++it)
 	{
-		listView2->Items->Add(gcnew String(to_string(it->getTheaterId()).c_str()), 1);
+		if (std::find(vec.begin(), vec.end(), it->getTheaterId()) == vec.end()) {
+			vec.push_back(it->getTheaterId());
+			Theater* tata = toto->findById(it->getTheaterId());
+			listView2->Items->Add(gcnew String(tata->getName().c_str()), 1);
+		}
 	}
+}
+private: System::Void listView3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
