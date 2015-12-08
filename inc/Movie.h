@@ -9,6 +9,7 @@ private:
 	int		id;
 	string	title;			// Inception
 	string	description;	// Something ...
+	string	pictureUrl;		// http:// .....
 	int		duration;		// 42
 	int		stars;			// 5
 
@@ -21,6 +22,7 @@ public:
 	int				getId() const;
 	string			getTitle() const;
 	string			getDescription() const;
+	string			getPictureUrl() const;
 	int				getDuration() const;
 	int				getStars() const;
 

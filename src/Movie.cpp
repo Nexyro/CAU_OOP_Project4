@@ -31,6 +31,11 @@ string	Movie::getDescription() const
 	return this->description;
 }
 
+string	Movie::getPictureUrl() const
+{
+	return this->pictureUrl;
+}
+
 int		Movie::getDuration() const
 {
 	return this->duration;
@@ -40,7 +45,7 @@ int		Movie::getStars() const
 	return this->stars;
 }
 
-string	Movie::getTableName() const
+string	Movie::getTableName()
 {
 	return "MOVIES";
 }
