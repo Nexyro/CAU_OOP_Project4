@@ -10,6 +10,7 @@ Show::Show(map<string, string>& array)
 	this->id		= stoi(array["id"]);
 	this->idFkMovie	= stoi(array["id_fk_movie"]);
 	this->idFkRoom	= stoi(array["id_fk_room"]);
+	this->idFkTheater = stoi(array["id_fk_theater"]);
 	this->date		= array["date"];
 }
 
