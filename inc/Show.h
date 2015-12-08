@@ -12,6 +12,7 @@ class Show : public IEntity
 private:
 	int		id;
 	int		idFkMovie;		// The Hunger Games
+	int		idFkTheater;
 	int		idFkRoom;		// CINEMA 9 (218 seats)
 	string	date;			// 12-03-2015-21-20
 
@@ -23,6 +24,7 @@ public:
 
 	int				getId() const;
 	string			getDate() const;
+	int				getTheaterId() const;
 
 	static string	getTableName();
 };
