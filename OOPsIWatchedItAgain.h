@@ -34,19 +34,8 @@ namespace OOPsIWatchedItAgain {
 				listView1->Items->Add(gcnew String((it->getTitle()).c_str()), 1);
 			}
 
-			//// get selected movie title
-			//String^ _movieTitle = listView1->SelectedItems->ToString();
-			//string movieTitle = msclr::interop::marshal_as<std::string>(_movieTitle);
-
-			//Movie* movie = movieRepo->findByTitle(movieTitle);
-			//int idOfMovie = movie->getId();		// get the id of that movie
-			//
-			//ShowRepository* showRepo = new ShowRepository(new ORM());
-			//list<::Show>* showList = showRepo->findBy("id_fk_movie", to_string(idOfMovie));
-			//for (std::list<::Show>::iterator it = showList->begin(); it != showList->end(); ++it)
-			//{
-			//	listView2->Items->Add(gcnew String(to_string(it->getTheaterId()).c_str()), 1);
-			//}
+			// get selected movie title
+			
 		}
 		
 	protected:
@@ -176,6 +165,7 @@ namespace OOPsIWatchedItAgain {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->bookedMovie_loginSuccessLabel = (gcnew System::Windows::Forms::Label());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->buttonBack = (gcnew System::Windows::Forms::Button());
 			this->label12 = (gcnew System::Windows::Forms::Label());
@@ -187,7 +177,6 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieDuration = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->dscrp_movieTitle = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
@@ -237,7 +226,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->menuStrip1->Dock = System::Windows::Forms::DockStyle::None;
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem });
-			this->menuStrip1->Location = System::Drawing::Point(0, 18);
+			this->menuStrip1->Location = System::Drawing::Point(1, 18);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
 			this->menuStrip1->Size = System::Drawing::Size(119, 24);
@@ -380,6 +369,7 @@ namespace OOPsIWatchedItAgain {
 			this->listView1->TabIndex = 1;
 			this->listView1->UseCompatibleStateImageBehavior = false;
 			this->listView1->View = System::Windows::Forms::View::List;
+			this->listView1->SelectedIndexChanged += gcnew System::EventHandler(this, &MainWindow::listView1_SelectedIndexChanged);
 			// 
 			// moviesLabel
 			// 
@@ -536,6 +526,17 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->Size = System::Drawing::Size(654, 311);
 			this->panel7->TabIndex = 2;
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(221, 138);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(70, 17);
+			this->label4->TabIndex = 0;
+			this->label4->Text = L"password";
+			// 
 			// panel5
 			// 
 			this->panel5->AutoSize = true;
@@ -668,17 +669,6 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieTitle->TabIndex = 1;
 			this->dscrp_movieTitle->Text = L"Movie Title";
 			this->dscrp_movieTitle->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(221, 138);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(70, 17);
-			this->label4->TabIndex = 0;
-			this->label4->Text = L"password";
 			// 
 			// label3
 			// 
@@ -835,5 +825,28 @@ namespace OOPsIWatchedItAgain {
 private: System::Void MainWindow_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 
+private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	if (this->listView1->SelectedItems->Count == 0)
+		return;
+
+	//string namn = this.listView1.SelectedItems[0].Text;
+
+	// get title of selected Movie
+	String^ _movieTitle = this->listView1->SelectedItems[0]->Text;
+	string movieTitle = msclr::interop::marshal_as<std::string>(_movieTitle);	// gets title
+
+
+	MovieRepository* movieRepo = new MovieRepository(new ORM());
+
+	Movie* movie = movieRepo->findByTitle(movieTitle);
+	int idOfMovie = movie->getId();		// get the id of that movie
+
+	ShowRepository* showRepo = new ShowRepository(new ORM());
+	list<::Show>* showList = showRepo->findBy("id_fk_movie", to_string(idOfMovie));
+	for (std::list<::Show>::iterator it = showList->begin(); it != showList->end(); ++it)
+	{
+		listView2->Items->Add(gcnew String(to_string(it->getTheaterId()).c_str()), 1);
+	}
+}
 };
 }

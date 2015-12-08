@@ -40,7 +40,7 @@ int		Movie::getStars() const
 	return this->stars;
 }
 
-string	Movie::getTableName() const
+string	Movie::getTableName()
 {
 	return "MOVIES";
 }
