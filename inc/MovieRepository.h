@@ -10,4 +10,5 @@ public:
 	MovieRepository(ORM*);
 	~MovieRepository();
 
+	Movie*	findByTitle(string);
 };

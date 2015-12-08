@@ -105,19 +105,19 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label11;
 	private: System::Windows::Forms::Label^  dscrp_movieDuration;
-	private: System::Windows::Forms::MenuStrip^  menuStrip3;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripComboBox^  toolStripComboBox1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem5;
-	private: System::Windows::Forms::MenuStrip^  menuStrip2;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem3;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem4;
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
-	private: System::Windows::Forms::Panel^  panel1;
+
+
+
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^  label8;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label9;
@@ -187,29 +187,12 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieDuration = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->dscrp_movieTitle = (gcnew System::Windows::Forms::Label());
-			this->menuStrip3 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripComboBox1 = (gcnew System::Windows::Forms::ToolStripComboBox());
-			this->toolStripMenuItem5 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip2 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem3 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem4 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel4->SuspendLayout();
 			this->panel6->SuspendLayout();
 			this->panel7->SuspendLayout();
 			this->panel5->SuspendLayout();
-			this->menuStrip3->SuspendLayout();
-			this->menuStrip2->SuspendLayout();
-			this->menuStrip1->SuspendLayout();
-			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// searchTextBox
@@ -423,7 +406,7 @@ namespace OOPsIWatchedItAgain {
 			// 
 			this->cancel_button->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->cancel_button->Location = System::Drawing::Point(23, 88);
+			this->cancel_button->Location = System::Drawing::Point(9, 91);
 			this->cancel_button->Name = L"cancel_button";
 			this->cancel_button->Size = System::Drawing::Size(87, 23);
 			this->cancel_button->TabIndex = 6;
@@ -462,7 +445,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->Controls->Add(this->usernameTextBox);
 			this->panel7->Controls->Add(this->passwordTextBox);
 			this->panel7->Controls->Add(this->label5);
-			this->panel7->Location = System::Drawing::Point(3, 12);
+			this->panel7->Location = System::Drawing::Point(2, 12);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(654, 311);
 			this->panel7->TabIndex = 2;
@@ -635,114 +618,6 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieTitle->Text = L"Movie Title";
 			this->dscrp_movieTitle->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
 			// 
-			// menuStrip3
-			// 
-			this->menuStrip3->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem2 });
-			this->menuStrip3->Location = System::Drawing::Point(1, 72);
-			this->menuStrip3->Name = L"menuStrip3";
-			this->menuStrip3->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip3->Size = System::Drawing::Size(119, 24);
-			this->menuStrip3->TabIndex = 5;
-			this->menuStrip3->Text = L"menuStrip3";
-			// 
-			// menuSomethingToolStripMenuItem2
-			// 
-			this->menuSomethingToolStripMenuItem2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripComboBox1,
-					this->toolStripMenuItem5
-			});
-			this->menuSomethingToolStripMenuItem2->Name = L"menuSomethingToolStripMenuItem2";
-			this->menuSomethingToolStripMenuItem2->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem2->Text = L"Menu something";
-			// 
-			// toolStripComboBox1
-			// 
-			this->toolStripComboBox1->Name = L"toolStripComboBox1";
-			this->toolStripComboBox1->Size = System::Drawing::Size(121, 23);
-			// 
-			// toolStripMenuItem5
-			// 
-			this->toolStripMenuItem5->Name = L"toolStripMenuItem5";
-			this->toolStripMenuItem5->Size = System::Drawing::Size(181, 22);
-			this->toolStripMenuItem5->Text = L"toolStripMenuItem5";
-			// 
-			// menuStrip2
-			// 
-			this->menuStrip2->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem1 });
-			this->menuStrip2->Location = System::Drawing::Point(1, 47);
-			this->menuStrip2->Name = L"menuStrip2";
-			this->menuStrip2->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip2->Size = System::Drawing::Size(119, 24);
-			this->menuStrip2->TabIndex = 4;
-			this->menuStrip2->Text = L"menuStrip2";
-			// 
-			// menuSomethingToolStripMenuItem1
-			// 
-			this->menuSomethingToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripMenuItem3,
-					this->toolStripMenuItem4
-			});
-			this->menuSomethingToolStripMenuItem1->Name = L"menuSomethingToolStripMenuItem1";
-			this->menuSomethingToolStripMenuItem1->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem1->Text = L"Menu something";
-			// 
-			// toolStripMenuItem3
-			// 
-			this->toolStripMenuItem3->Name = L"toolStripMenuItem3";
-			this->toolStripMenuItem3->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem3->Text = L"toolStripMenuItem3";
-			// 
-			// toolStripMenuItem4
-			// 
-			this->toolStripMenuItem4->Name = L"toolStripMenuItem4";
-			this->toolStripMenuItem4->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem4->Text = L"toolStripMenuItem4";
-			// 
-			// menuStrip1
-			// 
-			this->menuStrip1->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem });
-			this->menuStrip1->Location = System::Drawing::Point(1, 18);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(119, 24);
-			this->menuStrip1->TabIndex = 3;
-			this->menuStrip1->Text = L"Menu Something";
-			// 
-			// menuSomethingToolStripMenuItem
-			// 
-			this->menuSomethingToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripMenuItem1,
-					this->toolStripMenuItem2
-			});
-			this->menuSomethingToolStripMenuItem->Name = L"menuSomethingToolStripMenuItem";
-			this->menuSomethingToolStripMenuItem->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem->Text = L"Menu something";
-			// 
-			// toolStripMenuItem1
-			// 
-			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem1->Text = L"toolStripMenuItem1";
-			// 
-			// toolStripMenuItem2
-			// 
-			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
-			this->toolStripMenuItem2->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem2->Text = L"toolStripMenuItem2";
-			// 
-			// panel1
-			// 
-			this->panel1->Controls->Add(this->menuStrip1);
-			this->panel1->Controls->Add(this->menuStrip2);
-			this->panel1->Controls->Add(this->menuStrip3);
-			this->panel1->Location = System::Drawing::Point(12, 188);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(132, 112);
-			this->panel1->TabIndex = 2;
-			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(7, 12);
@@ -757,8 +632,6 @@ namespace OOPsIWatchedItAgain {
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->titleLabel);
 			this->Controls->Add(this->searchTextBox);
-			this->Controls->Add(this->panel1);
-			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MainWindow";
 			this->Text = L"OOPsIWatchedItAgain";
 			this->Load += gcnew System::EventHandler(this, &MainWindow::MainWindow_Load);
@@ -774,14 +647,6 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->PerformLayout();
 			this->panel5->ResumeLayout(false);
 			this->panel5->PerformLayout();
-			this->menuStrip3->ResumeLayout(false);
-			this->menuStrip3->PerformLayout();
-			this->menuStrip2->ResumeLayout(false);
-			this->menuStrip2->PerformLayout();
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
-			this->panel1->ResumeLayout(false);
-			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
