@@ -55,7 +55,7 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::Label^  titleLabel;
 	protected:
 
-	private: System::Windows::Forms::Panel^  panel1;
+
 	private: System::Windows::Forms::TextBox^  passwordTextBox;
 	private: System::Windows::Forms::TextBox^  usernameTextBox;
 	private: System::Windows::Forms::Button^  Login;
@@ -70,22 +70,22 @@ namespace OOPsIWatchedItAgain {
 
 	private: System::Windows::Forms::ListView^  listView3;
 	private: System::Windows::Forms::Button^  searchButton;
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
-	private: System::Windows::Forms::MenuStrip^  menuStrip2;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem3;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem4;
-	private: System::Windows::Forms::MenuStrip^  menuStrip3;
-	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem2;
-	private: System::Windows::Forms::ToolStripComboBox^  toolStripComboBox1;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem5;
+
+
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::Panel^  panel8;    // login panel
 	private: System::Windows::Forms::Panel^  panel6;	// user panel that is shown after login
-	private: System::Windows::Forms::Label^  bookedMovie_loginSuccessLabel;
-	private: System::Windows::Forms::Label^  label2;
+
+
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  username_loginSuccessLabel;
 	private: System::Windows::Forms::Panel^  panel7;
@@ -105,6 +105,23 @@ namespace OOPsIWatchedItAgain {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label11;
 	private: System::Windows::Forms::Label^  dscrp_movieDuration;
+	private: System::Windows::Forms::MenuStrip^  menuStrip3;
+	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem2;
+	private: System::Windows::Forms::ToolStripComboBox^  toolStripComboBox1;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem5;
+	private: System::Windows::Forms::MenuStrip^  menuStrip2;
+	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem3;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem4;
+	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^  menuSomethingToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
+	private: System::Windows::Forms::Panel^  panel1;
+	private: System::Windows::Forms::Label^  label8;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::Button^  cancel_button;
 
 
 
@@ -135,19 +152,6 @@ namespace OOPsIWatchedItAgain {
 		{
 			this->searchTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->titleLabel = (gcnew System::Windows::Forms::Label());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip2 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem3 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem4 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip3 = (gcnew System::Windows::Forms::MenuStrip());
-			this->menuSomethingToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripComboBox1 = (gcnew System::Windows::Forms::ToolStripComboBox());
-			this->toolStripMenuItem5 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Login = (gcnew System::Windows::Forms::Button());
 			this->passwordTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->usernameTextBox = (gcnew System::Windows::Forms::TextBox());
@@ -162,12 +166,16 @@ namespace OOPsIWatchedItAgain {
 			this->listView3 = (gcnew System::Windows::Forms::ListView());
 			this->searchButton = (gcnew System::Windows::Forms::Button());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->username_loginSuccessLabel = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->cancel_button = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->bookedMovie_loginSuccessLabel = (gcnew System::Windows::Forms::Label());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->buttonBack = (gcnew System::Windows::Forms::Button());
 			this->label12 = (gcnew System::Windows::Forms::Label());
@@ -179,18 +187,29 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieDuration = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->dscrp_movieTitle = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->panel1->SuspendLayout();
-			this->menuStrip1->SuspendLayout();
-			this->menuStrip2->SuspendLayout();
-			this->menuStrip3->SuspendLayout();
+			this->menuStrip3 = (gcnew System::Windows::Forms::MenuStrip());
+			this->menuSomethingToolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripComboBox1 = (gcnew System::Windows::Forms::ToolStripComboBox());
+			this->toolStripMenuItem5 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip2 = (gcnew System::Windows::Forms::MenuStrip());
+			this->menuSomethingToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem3 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem4 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->menuSomethingToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel4->SuspendLayout();
 			this->panel6->SuspendLayout();
 			this->panel7->SuspendLayout();
 			this->panel5->SuspendLayout();
+			this->menuStrip3->SuspendLayout();
+			this->menuStrip2->SuspendLayout();
+			this->menuStrip1->SuspendLayout();
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// searchTextBox
@@ -213,114 +232,6 @@ namespace OOPsIWatchedItAgain {
 			this->titleLabel->TabIndex = 1;
 			this->titleLabel->Text = L"Book Tickets";
 			this->titleLabel->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
-			// 
-			// panel1
-			// 
-			this->panel1->Controls->Add(this->menuStrip1);
-			this->panel1->Controls->Add(this->menuStrip2);
-			this->panel1->Controls->Add(this->menuStrip3);
-			this->panel1->Location = System::Drawing::Point(12, 188);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(132, 112);
-			this->panel1->TabIndex = 2;
-			// 
-			// menuStrip1
-			// 
-			this->menuStrip1->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem });
-			this->menuStrip1->Location = System::Drawing::Point(1, 18);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(119, 24);
-			this->menuStrip1->TabIndex = 3;
-			this->menuStrip1->Text = L"Menu Something";
-			// 
-			// menuSomethingToolStripMenuItem
-			// 
-			this->menuSomethingToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripMenuItem1,
-					this->toolStripMenuItem2
-			});
-			this->menuSomethingToolStripMenuItem->Name = L"menuSomethingToolStripMenuItem";
-			this->menuSomethingToolStripMenuItem->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem->Text = L"Menu something";
-			// 
-			// toolStripMenuItem1
-			// 
-			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem1->Text = L"toolStripMenuItem1";
-			// 
-			// toolStripMenuItem2
-			// 
-			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
-			this->toolStripMenuItem2->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem2->Text = L"toolStripMenuItem2";
-			// 
-			// menuStrip2
-			// 
-			this->menuStrip2->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem1 });
-			this->menuStrip2->Location = System::Drawing::Point(1, 47);
-			this->menuStrip2->Name = L"menuStrip2";
-			this->menuStrip2->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip2->Size = System::Drawing::Size(119, 24);
-			this->menuStrip2->TabIndex = 4;
-			this->menuStrip2->Text = L"menuStrip2";
-			// 
-			// menuSomethingToolStripMenuItem1
-			// 
-			this->menuSomethingToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripMenuItem3,
-					this->toolStripMenuItem4
-			});
-			this->menuSomethingToolStripMenuItem1->Name = L"menuSomethingToolStripMenuItem1";
-			this->menuSomethingToolStripMenuItem1->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem1->Text = L"Menu something";
-			// 
-			// toolStripMenuItem3
-			// 
-			this->toolStripMenuItem3->Name = L"toolStripMenuItem3";
-			this->toolStripMenuItem3->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem3->Text = L"toolStripMenuItem3";
-			// 
-			// toolStripMenuItem4
-			// 
-			this->toolStripMenuItem4->Name = L"toolStripMenuItem4";
-			this->toolStripMenuItem4->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem4->Text = L"toolStripMenuItem4";
-			// 
-			// menuStrip3
-			// 
-			this->menuStrip3->Dock = System::Windows::Forms::DockStyle::None;
-			this->menuStrip3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem2 });
-			this->menuStrip3->Location = System::Drawing::Point(1, 72);
-			this->menuStrip3->Name = L"menuStrip3";
-			this->menuStrip3->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
-			this->menuStrip3->Size = System::Drawing::Size(119, 24);
-			this->menuStrip3->TabIndex = 5;
-			this->menuStrip3->Text = L"menuStrip3";
-			// 
-			// menuSomethingToolStripMenuItem2
-			// 
-			this->menuSomethingToolStripMenuItem2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->toolStripComboBox1,
-					this->toolStripMenuItem5
-			});
-			this->menuSomethingToolStripMenuItem2->Name = L"menuSomethingToolStripMenuItem2";
-			this->menuSomethingToolStripMenuItem2->Size = System::Drawing::Size(110, 20);
-			this->menuSomethingToolStripMenuItem2->Text = L"Menu something";
-			// 
-			// toolStripComboBox1
-			// 
-			this->toolStripComboBox1->Name = L"toolStripComboBox1";
-			this->toolStripComboBox1->Size = System::Drawing::Size(121, 23);
-			// 
-			// toolStripMenuItem5
-			// 
-			this->toolStripMenuItem5->Name = L"toolStripMenuItem5";
-			this->toolStripMenuItem5->Size = System::Drawing::Size(181, 22);
-			this->toolStripMenuItem5->Text = L"toolStripMenuItem5";
 			// 
 			// Login
 			// 
@@ -403,6 +314,7 @@ namespace OOPsIWatchedItAgain {
 			this->listView2->TabIndex = 1;
 			this->listView2->UseCompatibleStateImageBehavior = false;
 			this->listView2->View = System::Windows::Forms::View::List;
+			this->listView2->SelectedIndexChanged += gcnew System::EventHandler(this, &MainWindow::listView2_SelectedIndexChanged);
 			// 
 			// theaterLabel
 			// 
@@ -461,26 +373,17 @@ namespace OOPsIWatchedItAgain {
 			// 
 			// panel6
 			// 
-			this->panel6->Controls->Add(this->label2);
 			this->panel6->Controls->Add(this->username_loginSuccessLabel);
+			this->panel6->Controls->Add(this->label8);
+			this->panel6->Controls->Add(this->label9);
+			this->panel6->Controls->Add(this->cancel_button);
+			this->panel6->Controls->Add(this->label2);
 			this->panel6->Controls->Add(this->label1);
-			this->panel6->Controls->Add(this->bookedMovie_loginSuccessLabel);
 			this->panel6->Location = System::Drawing::Point(12, 62);
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(132, 120);
 			this->panel6->TabIndex = 2;
 			this->panel6->Visible = false;
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(9, 40);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(113, 17);
-			this->label2->TabIndex = 0;
-			this->label2->Text = L"Booked Movies :";
 			// 
 			// username_loginSuccessLabel
 			// 
@@ -493,6 +396,53 @@ namespace OOPsIWatchedItAgain {
 			this->username_loginSuccessLabel->TabIndex = 0;
 			this->username_loginSuccessLabel->Text = L"username";
 			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label8->Location = System::Drawing::Point(9, 74);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(0, 17);
+			this->label8->TabIndex = 0;
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label9->Location = System::Drawing::Point(9, 66);
+			this->label9->Name = L"label9";
+			this->label9->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
+			this->label9->Size = System::Drawing::Size(104, 17);
+			this->label9->TabIndex = 0;
+			this->label9->Text = L"booked movie";
+			this->label9->Visible = false;
+			// 
+			// cancel_button
+			// 
+			this->cancel_button->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->cancel_button->Location = System::Drawing::Point(23, 88);
+			this->cancel_button->Name = L"cancel_button";
+			this->cancel_button->Size = System::Drawing::Size(87, 23);
+			this->cancel_button->TabIndex = 6;
+			this->cancel_button->Text = L"Cancel";
+			this->cancel_button->UseVisualStyleBackColor = true;
+			this->cancel_button->Visible = false;
+			this->cancel_button->Click += gcnew System::EventHandler(this, &MainWindow::cancelButton_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(9, 40);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(106, 17);
+			this->label2->TabIndex = 0;
+			this->label2->Text = L"Booked movie:";
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
@@ -504,27 +454,15 @@ namespace OOPsIWatchedItAgain {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Hello,";
 			// 
-			// bookedMovie_loginSuccessLabel
-			// 
-			this->bookedMovie_loginSuccessLabel->AutoSize = true;
-			this->bookedMovie_loginSuccessLabel->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->bookedMovie_loginSuccessLabel->Location = System::Drawing::Point(10, 65);
-			this->bookedMovie_loginSuccessLabel->Name = L"bookedMovie_loginSuccessLabel";
-			this->bookedMovie_loginSuccessLabel->Size = System::Drawing::Size(38, 17);
-			this->bookedMovie_loginSuccessLabel->TabIndex = 0;
-			this->bookedMovie_loginSuccessLabel->Text = L"none";
-			// 
 			// panel7
 			// 
 			this->panel7->Controls->Add(this->Login);
 			this->panel7->Controls->Add(this->label4);
-			this->panel7->Controls->Add(this->panel5);
 			this->panel7->Controls->Add(this->label3);
 			this->panel7->Controls->Add(this->usernameTextBox);
 			this->panel7->Controls->Add(this->passwordTextBox);
 			this->panel7->Controls->Add(this->label5);
-			this->panel7->Location = System::Drawing::Point(623, 12);
+			this->panel7->Location = System::Drawing::Point(3, 12);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(654, 311);
 			this->panel7->TabIndex = 2;
@@ -540,6 +478,30 @@ namespace OOPsIWatchedItAgain {
 			this->label4->TabIndex = 0;
 			this->label4->Text = L"password";
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(221, 109);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(71, 17);
+			this->label3->TabIndex = 0;
+			this->label3->Text = L"username";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Century Gothic", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(132, 45);
+			this->label5->Margin = System::Windows::Forms::Padding(0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(406, 39);
+			this->label5->TabIndex = 1;
+			this->label5->Text = L"OOPs I Watched It Again";
+			this->label5->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
+			// 
 			// panel5
 			// 
 			this->panel5->AutoSize = true;
@@ -553,7 +515,7 @@ namespace OOPsIWatchedItAgain {
 			this->panel5->Controls->Add(this->dscrp_movieDuration);
 			this->panel5->Controls->Add(this->label7);
 			this->panel5->Controls->Add(this->dscrp_movieTitle);
-			this->panel5->Location = System::Drawing::Point(6, 115);
+			this->panel5->Location = System::Drawing::Point(152, 86);
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(485, 234);
 			this->panel5->TabIndex = 2;
@@ -673,29 +635,113 @@ namespace OOPsIWatchedItAgain {
 			this->dscrp_movieTitle->Text = L"Movie Title";
 			this->dscrp_movieTitle->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
 			// 
-			// label3
+			// menuStrip3
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(221, 109);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(71, 17);
-			this->label3->TabIndex = 0;
-			this->label3->Text = L"username";
+			this->menuStrip3->Dock = System::Windows::Forms::DockStyle::None;
+			this->menuStrip3->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem2 });
+			this->menuStrip3->Location = System::Drawing::Point(1, 72);
+			this->menuStrip3->Name = L"menuStrip3";
+			this->menuStrip3->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
+			this->menuStrip3->Size = System::Drawing::Size(119, 24);
+			this->menuStrip3->TabIndex = 5;
+			this->menuStrip3->Text = L"menuStrip3";
 			// 
-			// label5
+			// menuSomethingToolStripMenuItem2
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Century Gothic", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(132, 45);
-			this->label5->Margin = System::Windows::Forms::Padding(0);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(406, 39);
-			this->label5->TabIndex = 1;
-			this->label5->Text = L"OOPs I Watched It Again";
-			this->label5->Click += gcnew System::EventHandler(this, &MainWindow::titleLabel_Click);
+			this->menuSomethingToolStripMenuItem2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->toolStripComboBox1,
+					this->toolStripMenuItem5
+			});
+			this->menuSomethingToolStripMenuItem2->Name = L"menuSomethingToolStripMenuItem2";
+			this->menuSomethingToolStripMenuItem2->Size = System::Drawing::Size(110, 20);
+			this->menuSomethingToolStripMenuItem2->Text = L"Menu something";
+			// 
+			// toolStripComboBox1
+			// 
+			this->toolStripComboBox1->Name = L"toolStripComboBox1";
+			this->toolStripComboBox1->Size = System::Drawing::Size(121, 23);
+			// 
+			// toolStripMenuItem5
+			// 
+			this->toolStripMenuItem5->Name = L"toolStripMenuItem5";
+			this->toolStripMenuItem5->Size = System::Drawing::Size(181, 22);
+			this->toolStripMenuItem5->Text = L"toolStripMenuItem5";
+			// 
+			// menuStrip2
+			// 
+			this->menuStrip2->Dock = System::Windows::Forms::DockStyle::None;
+			this->menuStrip2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem1 });
+			this->menuStrip2->Location = System::Drawing::Point(1, 47);
+			this->menuStrip2->Name = L"menuStrip2";
+			this->menuStrip2->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
+			this->menuStrip2->Size = System::Drawing::Size(119, 24);
+			this->menuStrip2->TabIndex = 4;
+			this->menuStrip2->Text = L"menuStrip2";
+			// 
+			// menuSomethingToolStripMenuItem1
+			// 
+			this->menuSomethingToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->toolStripMenuItem3,
+					this->toolStripMenuItem4
+			});
+			this->menuSomethingToolStripMenuItem1->Name = L"menuSomethingToolStripMenuItem1";
+			this->menuSomethingToolStripMenuItem1->Size = System::Drawing::Size(110, 20);
+			this->menuSomethingToolStripMenuItem1->Text = L"Menu something";
+			// 
+			// toolStripMenuItem3
+			// 
+			this->toolStripMenuItem3->Name = L"toolStripMenuItem3";
+			this->toolStripMenuItem3->Size = System::Drawing::Size(180, 22);
+			this->toolStripMenuItem3->Text = L"toolStripMenuItem3";
+			// 
+			// toolStripMenuItem4
+			// 
+			this->toolStripMenuItem4->Name = L"toolStripMenuItem4";
+			this->toolStripMenuItem4->Size = System::Drawing::Size(180, 22);
+			this->toolStripMenuItem4->Text = L"toolStripMenuItem4";
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Dock = System::Windows::Forms::DockStyle::None;
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->menuSomethingToolStripMenuItem });
+			this->menuStrip1->Location = System::Drawing::Point(1, 18);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Padding = System::Windows::Forms::Padding(7, 2, 0, 2);
+			this->menuStrip1->Size = System::Drawing::Size(119, 24);
+			this->menuStrip1->TabIndex = 3;
+			this->menuStrip1->Text = L"Menu Something";
+			// 
+			// menuSomethingToolStripMenuItem
+			// 
+			this->menuSomethingToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->toolStripMenuItem1,
+					this->toolStripMenuItem2
+			});
+			this->menuSomethingToolStripMenuItem->Name = L"menuSomethingToolStripMenuItem";
+			this->menuSomethingToolStripMenuItem->Size = System::Drawing::Size(110, 20);
+			this->menuSomethingToolStripMenuItem->Text = L"Menu something";
+			// 
+			// toolStripMenuItem1
+			// 
+			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
+			this->toolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->toolStripMenuItem1->Text = L"toolStripMenuItem1";
+			// 
+			// toolStripMenuItem2
+			// 
+			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
+			this->toolStripMenuItem2->Size = System::Drawing::Size(180, 22);
+			this->toolStripMenuItem2->Text = L"toolStripMenuItem2";
+			// 
+			// panel1
+			// 
+			this->panel1->Controls->Add(this->menuStrip1);
+			this->panel1->Controls->Add(this->menuStrip2);
+			this->panel1->Controls->Add(this->menuStrip3);
+			this->panel1->Location = System::Drawing::Point(12, 188);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(132, 112);
+			this->panel1->TabIndex = 2;
 			// 
 			// MainWindow
 			// 
@@ -704,6 +750,7 @@ namespace OOPsIWatchedItAgain {
 			this->ClientSize = System::Drawing::Size(659, 323);
 			this->Controls->Add(this->panel7);
 			this->Controls->Add(this->panel6);
+			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel4);
 			this->Controls->Add(this->searchButton);
 			this->Controls->Add(this->panel3);
@@ -715,14 +762,6 @@ namespace OOPsIWatchedItAgain {
 			this->Name = L"MainWindow";
 			this->Text = L"OOPsIWatchedItAgain";
 			this->Load += gcnew System::EventHandler(this, &MainWindow::MainWindow_Load);
-			this->panel1->ResumeLayout(false);
-			this->panel1->PerformLayout();
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
-			this->menuStrip2->ResumeLayout(false);
-			this->menuStrip2->PerformLayout();
-			this->menuStrip3->ResumeLayout(false);
-			this->menuStrip3->PerformLayout();
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
 			this->panel3->ResumeLayout(false);
@@ -735,6 +774,14 @@ namespace OOPsIWatchedItAgain {
 			this->panel7->PerformLayout();
 			this->panel5->ResumeLayout(false);
 			this->panel5->PerformLayout();
+			this->menuStrip3->ResumeLayout(false);
+			this->menuStrip3->PerformLayout();
+			this->menuStrip2->ResumeLayout(false);
+			this->menuStrip2->PerformLayout();
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -833,8 +880,6 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, Sy
 	if (this->listView1->SelectedItems->Count == 0)
 		return;
 
-	//string namn = this.listView1.SelectedItems[0].Text;
-
 	// get title of selected Movie
 	String^ _movieTitle = this->listView1->SelectedItems[0]->Text;
 	string movieTitle = msclr::interop::marshal_as<std::string>(_movieTitle);	// gets title
@@ -859,7 +904,62 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, Sy
 		}
 	}
 }
-private: System::Void listView3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+private: System::Void listView2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	this->listView3->Clear();
+	if (this->listView2->SelectedItems->Count == 0)
+		return;
+
+	MovieRepository* movieRepo = new MovieRepository(new ORM());
+	TheaterRepository*	theaterRepo = new TheaterRepository(new ORM());
+	ShowRepository* showRepo = new ShowRepository(new ORM());
+
+	// get theater
+	String^ _theater = this->listView2->SelectedItems[0]->Text;
+	string theater_name = msclr::interop::marshal_as<std::string>(_theater);	// gets theater
+
+	Theater* theater = theaterRepo->findOneBy("name", theater_name);
+	int idOfTheater = theater->getId();
+
+	String^ _movieTitle = this->listView1->SelectedItems[0]->Text;
+	string movieTitle = msclr::interop::marshal_as<std::string>(_movieTitle);	// gets title
+
+	Movie* movie = movieRepo->findByTitle(movieTitle);
+	int idOfMovie = movie->getId();		// get the id of that movie
+
+	list<::Show>* showList = showRepo->findByTheaterAndMovie(idOfTheater, idOfMovie);
+
+	for (std::list<::Show>::iterator it = showList->begin(); it != showList->end(); ++it)
+	{
+		listView3->Items->Add(gcnew String(it->getDate().c_str()), 1);
+	}
 }
+private: System::Void listView3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	// show movie name when clicked
+	String^ _movieTitle = this->listView1->SelectedItems[0]->Text;
+	string movieTitle = msclr::interop::marshal_as<std::string>(_movieTitle);	// gets title
+
+	this->cancel_button->Visible = true;
+	this->label9->Text = _movieTitle;
+	this->label9->Visible = true;
+}
+
+	private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
+		// Initializes the variables to pass to the MessageBox::Show method.
+		String^ message = "Are you sure you want to cancel?";
+		String^ caption = "Movie Cancel Confirmation";
+		MessageBoxButtons button = MessageBoxButtons::YesNo;
+		System::Windows::Forms::DialogResult result;
+
+		// Displays the MessageBox.
+		result = MessageBox::Show(this, message, caption, button);
+		if (result == ::System::Windows::Forms::DialogResult::Yes)
+		{
+			this->label9->Visible = false;
+			this->cancel_button->Visible = false;
+		}
+		if (result == ::System::Windows::Forms::DialogResult::No)
+			return;
+	}
+
 };
 }

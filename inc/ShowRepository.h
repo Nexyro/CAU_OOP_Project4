@@ -9,7 +9,6 @@ public:
 	ShowRepository(ORM*);
 	~ShowRepository();
 
-	list<Show>*	findByMovie();
-	list<Show>*	findByRoom();
+	list<Show>*	findByTheaterAndMovie(int, int);
 };
 
