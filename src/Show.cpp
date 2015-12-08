@@ -29,3 +29,8 @@ string	Show::getTableName()
 {
 	return "SHOWS";
 }
+
+int		Show::getTheaterId() const
+{
+	return this->idFkTheater;
+}

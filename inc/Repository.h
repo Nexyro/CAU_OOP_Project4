@@ -49,7 +49,7 @@ public:
 		return obj;
 	}
 
-	list<T>*	findBy(string key, string value)
+	list<T>*	findBy(string key, std::string value)
 	{
 		list<T>*				listObj = new list<T>;
 		map<string, string>*	resultQuery;
@@ -59,7 +59,7 @@ public:
 
 		while (resultQuery = this->orm->fetchArray())
 		{
-			listObj->push_back(Movie(*resultQuery));
+			listObj->push_back(T(*resultQuery));
 		}
 		return listObj;
 	}
