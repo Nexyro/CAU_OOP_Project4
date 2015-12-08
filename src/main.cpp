@@ -7,7 +7,7 @@ using namespace OOPsIWatchedItAgain;
 
 [STAThread]
 void Main(cli::array<String^>^ args)
-{
+ {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
